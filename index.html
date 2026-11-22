@@ -3,244 +3,410 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Öğrenme Alışkanlığı Testi · BAK·KAYA</title>
-<meta name="description" content="10–14 yaş için 7 dakikalık Öğrenme Alışkanlığı Testi: BAK ile öğrenme anlarını, KAYA ile kalıcı öğrenmenin dört anahtarını keşfet.">
-<meta property="og:title" content="Öğrenme Alışkanlığı Testi · BAK·KAYA">
-<meta property="og:description" content="7 dakikada BAK ile öğrenme anlarını, KAYA ile kalıcı öğrenmenin dört anahtarını keşfet. 10–14 yaş için.">
+<title>Yörünge · TACEV · Öğrenme Alışkanlığı Testi</title>
+<meta name="description" content="TACEV Yörünge — Öğrenme Alışkanlığı Testi (BAK · KAYA). 7 dakikada öğrenme anlarını ve kalıcı öğrenmenin dört anahtarını keşfet. Tanı ya da not değildir.">
+<meta property="og:title" content="Yörünge · Öğrenme Alışkanlığı Testi">
+<meta property="og:description" content="BAK ile öğrenme anlarını, KAYA ile kalıcı öğrenmenin dört anahtarını keşfet. 10–14 yaş.">
 <meta property="og:type" content="website">
+<meta property="og:image" content="varlik/gorsel/og.jpg">
 <meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23123c40' stroke-width='2'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='m16.2 7.8-2.1 6.3-6.3 2.1 2.1-6.3z'/%3E%3C/svg%3E">
 <style>
-:root{--zemin:#fbf6ee;--kart:#ffffff;--yazi:#1f2a44;--soluk:#59606c;--cizgi:#e6dccb;--vurgu:#b4491a;--vurgu-yazi:#b4491a;--yesil:#17695f;--yesil-yazi:#17695f;--mavi:#3c4aa6;--odak:#3c4aa6;--acik:#fff3e8;--golge:0 6px 24px rgba(31,42,68,.08)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--zemin:#141a28;--kart:#1d2538;--yazi:#eef1f7;--soluk:#a5adbd;--cizgi:#34405a;--vurgu-yazi:#f2a06b;--yesil-yazi:#5fc9bb;--odak:#9fb0ff;--acik:#2a2430;--golge:0 6px 24px rgba(0,0,0,.35)}}
-:root[data-theme="dark"]{--zemin:#141a28;--kart:#1d2538;--yazi:#eef1f7;--soluk:#a5adbd;--cizgi:#34405a;--vurgu-yazi:#f2a06b;--yesil-yazi:#5fc9bb;--odak:#9fb0ff;--acik:#2a2430;--golge:0 6px 24px rgba(0,0,0,.35)}
+@font-face{font-family:"Geist";font-style:normal;font-weight:100 900;font-display:swap;src:url(varlik/font/geist-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Geist";font-style:normal;font-weight:100 900;font-display:swap;src:url(varlik/font/geist-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+:root{--ink:#123c40;--teal:#087c76;--line:#d7e4e1;--muted:#51696b;--bg:#f4f8f7;--mint:#e0f3ed;--mint2:#eef6f3;--cream:#f7f0df;--action:#dfede5;--kart:#fff;
+ --b:#087c76;--a:#3d62a8;--k:#7a4f9e;--kk:#a8551b;--ka:#3d62a8;--ky:#4f7228;--kn:#9b3f6f;--kaya:#087c76;--sag:#3d62a8;--kolay:#a8551b}
 *{box-sizing:border-box}
-html,body{overflow-wrap:break-word;margin:0;background:var(--zemin);color:var(--yazi);font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:100%;line-height:1.5;-webkit-text-size-adjust:100%}
-.sayfa{max-width:54rem;margin:0 auto;padding:1.25rem 1rem 3rem}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:"Geist",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;font-size:17px;line-height:1.6;-webkit-text-size-adjust:100%;overflow-wrap:break-word}
+h1,h2,h3,p{margin:0}
+h1,h2,h3{font-weight:700;letter-spacing:-.01em}
+a{color:var(--teal)}
+button{font:inherit;color:inherit}
 .gizli{display:none!important}
-h1{font-size:1.9rem;line-height:1.2;margin:.2em 0 .4em;font-weight:800}
-h2{font-size:1.35rem;line-height:1.3;margin:1.2em 0 .4em;font-weight:800}
-h3{font-size:1.1rem;margin:0 0 .2em}
-p{margin:.45em 0}
-.soluk{color:var(--soluk)}
-.dugme{appearance:none;border:0;border-radius:.9rem;padding:.85rem 1.3rem;font:inherit;font-weight:700;font-size:1.05rem;cursor:pointer;background:var(--vurgu);color:#fff;box-shadow:var(--golge)}
-.dugme.ikincil{background:transparent;color:var(--yazi);border:2px solid var(--cizgi);box-shadow:none}
-.dugme:focus-visible,.secim:focus-visible,summary:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,[tabindex]:not([tabindex="-1"]):focus-visible{outline:3px solid var(--odak);outline-offset:3px}
-[tabindex="-1"]:focus{outline:none}
-.kutu{background:var(--kart);border-radius:1.2rem;padding:1.2rem;box-shadow:var(--golge)}
-.maddeler{display:grid;gap:.7rem;margin:1.1rem 0}
-.maddeler div{display:flex;gap:.75rem;align-items:flex-start}
-.maddeler b{flex:0 0 1.9rem;height:1.9rem;border-radius:50%;background:var(--acik);color:var(--vurgu-yazi);display:grid;place-items:center;font-weight:800}
-label.alan{display:block;font-weight:700;margin:.9rem 0 .35rem}
-input,select{font:inherit;width:100%;padding:.75rem;border-radius:.75rem;border:2px solid var(--cizgi);background:var(--kart);color:var(--yazi)}
-.ornek{margin:1.1rem 0;padding:.9rem;border-radius:.9rem;background:var(--acik);font-size:.95rem}
-.devam-kutu{border:2px solid var(--vurgu);margin-bottom:1rem}
-.dugmeler{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}
-.onay{display:flex;gap:.6rem;align-items:flex-start;margin:1rem 0 0;font-size:.95rem;cursor:pointer}
-.onay input{width:1.4rem;height:1.4rem;flex:0 0 1.4rem;margin-top:.1rem;accent-color:var(--vurgu)}
-/* soru */
-.ust{display:flex;align-items:center;gap:.75rem;margin-bottom:.9rem}
-.ilerleme{flex:1;height:.6rem;background:var(--cizgi);border-radius:99px;overflow:hidden}
-.ilerleme i{display:block;height:100%;width:0;background:var(--vurgu);transition:width .3s}
-.sayac{font-weight:700;color:var(--soluk);font-size:.95rem;min-width:3.3rem;text-align:right}
-.durum{font-size:1.3rem;font-weight:800;margin:.3rem 0 1rem;outline:none}
-.taraflar{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:.75rem;align-items:stretch}
-.taraf{background:var(--kart);border-radius:1.1rem;padding:1rem;box-shadow:var(--golge);display:flex;flex-direction:column;border:3px solid transparent;transition:border-color .15s}
-.taraf.secili{border-color:var(--vurgu)}
-.taraf .kim{font-size:.8rem;font-weight:700;color:var(--soluk);text-transform:uppercase;letter-spacing:.05em}
-.taraf p{margin:.35em 0 .9rem;font-size:1.08rem;font-weight:600;flex:1}
-.secimler{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(8.5rem,100%),1fr));gap:.5rem}
-.secim{min-width:0;appearance:none;font:inherit;font-weight:700;border-radius:.75rem;padding:.75rem .4rem;cursor:pointer;border:2px solid var(--cizgi);background:var(--zemin);color:var(--yazi);min-height:3rem}
-.secim.tam{border-color:var(--soluk)}
-.secim[aria-pressed="true"]{background:var(--vurgu);border-color:var(--vurgu);color:#fff}
-.ama{align-self:center;font-weight:800;color:var(--yazi);font-size:.85rem;background:var(--cizgi);padding:.35rem .65rem;border-radius:99px}
-.alt{display:flex;justify-content:space-between;align-items:center;margin-top:1.1rem;gap:.75rem;flex-wrap:wrap}
-@media (max-width:40rem){.taraflar{grid-template-columns:minmax(0,1fr)}.ama{justify-self:center}.durum{font-size:1.15rem}h1{font-size:1.6rem}}
-.ortala{text-align:center;padding:2.5rem 1rem}.ortala .buyuk{font-size:3rem;line-height:1}
-.ortala .dugmeler{justify-content:center}
-/* sonuç */
-.bolum-baslik{display:flex;flex-wrap:wrap;align-items:baseline;gap:.2rem .6rem;margin-top:1.8rem}
-.bolum-baslik h2{min-width:0}
-.bolum-baslik span{font-weight:800;color:var(--vurgu-yazi);font-size:1.35rem}
-.bolum-baslik h2{margin:0}
-.anlar{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.6rem;margin:1rem 0}
-.an{border-radius:1rem;padding:.8rem;border:2px solid var(--cizgi);text-align:center}
-.an b{display:block;font-size:1.1rem}.an small{display:block;color:var(--soluk)}
-.an .etk{display:inline-block;margin-top:.4rem;font-size:.8rem;font-weight:800;padding:.2rem .6rem;border-radius:99px;background:var(--cizgi);color:var(--yazi)}
-.an.guclu{border-color:var(--yesil-yazi)}.an.guclu .etk{background:var(--yesil);color:#fff}
-.an.dene .etk{background:var(--vurgu);color:#fff}
-@media (max-width:34rem){.anlar{grid-template-columns:minmax(0,1fr)}.an{display:flex;flex-wrap:wrap;align-items:center;gap:.3rem .6rem;text-align:left}.an small{display:inline;flex:1 1 auto}.an .etk{margin-top:0}}
-.sonuc-baslik{font-size:1.35rem;font-weight:800;margin:.2rem 0}
-.dene-kutu{margin-top:.8rem;padding:.9rem;border-radius:.9rem;background:var(--acik)}
-.dene-kutu b{color:var(--vurgu-yazi)}
-.tuzaklar{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.85rem;margin-top:.85rem}
-@media (max-width:40rem){.tuzaklar{grid-template-columns:minmax(0,1fr)}}
-.tuzak .oz{color:var(--soluk);font-size:.9rem;font-weight:600}
-.tuzak .kolay-yol{font-weight:500;font-style:italic;margin-top:.15rem}
-.harf{display:inline-grid;place-items:center;min-width:1.7em;height:1.7em;border-radius:.5em;background:var(--vurgu);color:#fff;font-weight:800;font-size:.85em;margin-right:.2em}
-.rozet{display:inline-block;margin:.6rem 0 .35rem;padding:.25rem .75rem;border-radius:99px;font-weight:800;font-size:.85rem;color:#fff}
-.r-kalici{background:var(--yesil)}.r-arada{background:var(--mavi)}.r-kolay{background:var(--vurgu)}
-details{margin-top:1.3rem;background:var(--kart);border-radius:1rem;padding:.4rem 1rem;box-shadow:var(--golge)}
-summary{cursor:pointer;font-weight:800;font-size:1.05rem;padding:.6rem 0}
-details h3{margin-top:.9rem}
-details ul{padding-left:1.2rem;margin:.4rem 0}
-table{width:100%;border-collapse:collapse;font-size:.85rem}td,th{padding:.4rem;border-bottom:1px solid var(--cizgi);text-align:left;vertical-align:top}
-.tablo-sar{overflow-x:auto}
-.kars td.esit{color:var(--yesil-yazi);font-weight:800}
-.not{font-size:.88rem;color:var(--soluk);border-left:4px solid var(--cizgi);padding-left:.75rem;margin-top:1.3rem}
-footer{margin-top:2.2rem;font-size:.9rem;color:var(--soluk);text-align:center}
-footer a{color:var(--vurgu-yazi);font-weight:700}
-/* veli (pilot) */
-.vsatir{background:var(--kart);border-radius:1rem;padding:.9rem;box-shadow:var(--golge);margin:.75rem 0}
-.vsatir .iki{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.6rem}
-.vsatir .yan{background:var(--zemin);border-radius:.75rem;padding:.65rem;display:flex;flex-direction:column;gap:.5rem;border:2px solid transparent}
-.vsatir .yan.secili{border-color:var(--vurgu)}
-.vsatir .yan p{margin:0;flex:1;font-weight:600}
-@media (max-width:40rem){.vsatir .iki{grid-template-columns:minmax(0,1fr)}}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-@media print{
-  :root:not(.p1):not(.p2),:root[data-theme]:not(.p1){--zemin:#fff;--kart:#fff;--yazi:#111;--soluk:#444;--cizgi:#ccc;--vurgu-yazi:#8a3512;--acik:#f6efe6;--golge:none}
-  html,body{background:#fff}
-  .dugmeler,.no-print,footer .no-print{display:none!important}
-  .kutu,.tuzak,.an,tr,details{break-inside:avoid}
-  details{box-shadow:none;border:1px solid #ccc}
-  .tablo-sar{overflow:visible}
-  .sayfa{max-width:none;padding:0}
-  .rozet,.an .etk,.r-kalici,.r-arada,.r-kolay{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+[tabindex="-1"]:focus{outline:none}
+.ust{display:flex;justify-content:space-between;align-items:center;gap:20px;max-width:1240px;margin:auto;padding:26px 32px}
+.marka{display:flex;align-items:center;gap:12px;background:none;border:0;cursor:pointer;text-align:left;color:var(--ink);font-size:20px;font-weight:600;line-height:1.2;padding:0}
+.marka svg{flex:none}
+.marka small{display:block;font-size:13px;font-weight:500;margin-top:5px;letter-spacing:.02em}
+.ust nav{display:flex;align-items:center;gap:18px}
+.ust nav button{background:none;border:0;display:flex;align-items:center;gap:6px;min-height:44px;font-size:14px;cursor:pointer;color:var(--ink)}
+.bant{max-width:1180px;margin:0 auto 18px;padding:14px 22px;border:1px solid #b9d5ca;background:#e8f3ef;border-radius:14px;display:flex;justify-content:space-between;gap:12px;align-items:center;font-size:14px}
+.bant button{background:none;border:0;color:var(--ink);text-decoration:underline;cursor:pointer;font-size:14px}
+main{display:block}
+.eyebrow{display:block;letter-spacing:.12em;color:var(--teal);margin-bottom:14px;font-size:13px;font-weight:750;text-transform:uppercase}
+.panel{border:1px solid var(--line);background:#fff;border-radius:28px;padding:30px;box-shadow:0 16px 60px #164b4210}
+.birincil{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;min-height:54px;padding:14px 22px;border:0;border-radius:14px;background:var(--teal);color:#fff;font-size:17px;font-weight:650;cursor:pointer;text-decoration:none;white-space:normal;text-align:center}
+.birincil[disabled]{background:#86bcb6;cursor:not-allowed}
+.ikincil{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:50px;padding:12px 20px;border:1px solid #a9c8be;border-radius:12px;background:#fff;color:var(--ink);font-size:16px;cursor:pointer;text-decoration:none;line-height:1.4}
+.yazi-dugme{background:none;border:0;color:var(--teal);text-decoration:underline;min-height:44px;padding:10px 0;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+.cip{display:inline-block;border:1px solid #ffffff55;border-radius:99px;padding:6px 14px;font-size:14px}
+.harf{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:10px;color:#fff;font-weight:800;font-size:17px;flex:none}
+.durum-cip{display:inline-flex;align-items:center;gap:6px;border-radius:99px;padding:4px 12px;font-size:13px;font-weight:700;color:#fff}
+.d-kalici{background:var(--kaya)}.d-arada{background:var(--sag)}.d-kolay{background:var(--kolay)}
+.avatar{display:block;aspect-ratio:1;background-image:url(varlik/gorsel/avatars.jpg);background-size:500% 200%;border-radius:20px;flex:none}
+.giris{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;max-width:1180px;margin:auto;padding:28px 24px 60px;align-items:start}
+.giris h1{font-size:clamp(38px,4.5vw,60px);line-height:1.12;letter-spacing:-.035em;margin:10px 0 24px}
+.giris h1 em{color:var(--teal);font-style:normal;display:block}
+.giris .lead{color:var(--muted);font-size:18px;max-width:34em}
+.hero-art{width:100%;height:230px;object-fit:cover;object-position:center 40%;border-radius:28px;margin:28px 0 18px;display:block;background:#dfeee9}
+.guven{display:flex;gap:14px;color:var(--muted);font-size:15px;margin:8px 0 22px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.guven svg{flex:none;margin-top:2px}
+.adimlar{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:22px}
+.adimlar div{font-size:15px;font-weight:650}
+.adimlar span{display:block;color:var(--teal);font-weight:500;font-size:13px}
+details.veli-bilgi{border-top:1px solid var(--line);padding-top:16px;margin-top:10px}
+details summary{cursor:pointer;font-weight:650;font-size:15px;min-height:36px}
+details.veli-bilgi p{color:var(--muted);font-size:15px;margin-top:8px}
+.tanis h2{font-size:27px;line-height:1.25;margin-bottom:22px}
+.tanis label.alan{display:block;margin-bottom:18px;font-size:15px;font-weight:650}
+.tanis label.alan span{color:var(--muted);font-weight:400}
+.tanis input[type=text],.tanis select{display:block;width:100%;min-height:48px;margin-top:7px;padding:10px 14px;border:1px solid #bfd0ce;border-radius:12px;background:#f8faf9;color:var(--ink);font:inherit;font-size:16px}
+.tanis fieldset{border:0;margin:24px 0 8px;padding:0}
+.tanis legend{font-size:15px;font-weight:650;margin-bottom:10px}
+.avatarlar{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+.avatarlar button{position:relative;padding:4px;border:2px solid transparent;border-radius:17px;background:#f7f9f8;cursor:pointer;min-width:0;box-shadow:0 4px 12px #123c4009;transition:transform .18s,box-shadow .18s}
+.avatarlar button:hover{transform:translateY(-3px);box-shadow:0 10px 20px #123c4018}
+.avatarlar button[aria-pressed="true"]{border-color:var(--teal);background:#ddf3ee;box-shadow:0 0 0 3px #087c7617}
+.avatarlar .avatar{border-radius:12px;width:100%}
+.avatarlar small{display:block;font-size:13px;line-height:1.2;margin:5px 0}
+.avatar-onizleme{display:flex;align-items:center;gap:15px;min-height:98px;margin-top:16px;padding:12px;border:1px solid #d3e6ed;border-radius:20px;background:linear-gradient(120deg,#edf8fb,#f5faf7)}
+.avatar-onizleme .avatar{width:72px}
+.avatar-onizleme b{display:block}.avatar-onizleme small{color:var(--muted);font-size:14px}
+.onay{display:flex;gap:12px;align-items:flex-start;margin:22px 0 18px;font-size:15px;cursor:pointer}
+.onay input{width:22px;height:22px;flex:none;margin-top:2px;accent-color:var(--teal)}
+.kucuk-not{color:var(--muted);font-size:13px;line-height:1.55;margin-top:14px}
+.dar{max-width:860px;margin:10px auto 60px;padding:0 24px}
+.ilerleme-bas{display:flex;justify-content:space-between;gap:15px;font-size:15px;margin-bottom:8px;color:var(--muted)}
+.ilerleme{height:8px;border-radius:10px;background:#dce9e4;overflow:hidden;margin-bottom:24px}
+.ilerleme i{display:block;height:100%;width:0;background:var(--teal);transition:width .3s}
+.soru-ust{display:flex;align-items:center;gap:18px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+.soru-ust p{flex:1;color:var(--muted);font-size:16px}
+.soru-ust .avatar{width:72px}
+.soru h1{font-size:clamp(25px,3vw,32px);line-height:1.25;margin:28px 0 22px;outline:none}
+.taraflar{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:14px;align-items:stretch}
+.taraf{display:flex;flex-direction:column;padding:18px;border:1.5px solid #b6ccc5;border-radius:18px;background:#fff;transition:border-color .15s,background .15s}
+.taraf.secili{border-color:var(--teal);box-shadow:0 0 0 1px var(--teal);background:#f2faf7}
+.taraf .kim{font-size:12px;font-weight:750;letter-spacing:.08em;color:var(--teal);text-transform:uppercase}
+.taraf p{flex:1;margin:6px 0 16px;font-size:18px;font-weight:600;line-height:1.45}
+.secimler{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(9rem,100%),1fr));gap:8px}
+.secim{min-width:0;min-height:52px;padding:10px 8px;border:1.5px solid #b6ccc5;border-radius:14px;background:#fff;cursor:pointer;font-size:15px;font-weight:600;color:var(--ink)}
+.secim:hover{background:#eef7f3}
+.secim[aria-pressed="true"]{border-color:var(--teal);background:var(--teal);color:#fff}
+.ama{align-self:center;font-size:12px;font-weight:800;letter-spacing:.08em;color:var(--muted);background:var(--mint2);border:1px solid var(--line);border-radius:99px;padding:6px 10px}
+.soru-alt{display:grid;grid-template-columns:150px 1fr;gap:18px;align-items:center;margin-top:24px}
+.soru-alt span{color:var(--muted);font-size:14px}
+.ornek-kutu{border-left:4px solid var(--teal);background:var(--mint2);border-radius:14px;padding:18px 22px;margin:22px 0}
+.ornek-kutu b{color:var(--teal);font-size:13px}
+.ortala{text-align:center}
+.ortala .avatar{width:120px;margin:0 auto 18px;border-radius:50%;border:4px solid #d2ebe0}
+.ortala h1{font-size:34px;margin-bottom:10px}
+.ortala p{color:var(--muted);margin-bottom:24px}
+.ortala .birincil{max-width:360px;margin:0 auto 12px}
+.rapor{max-width:1180px;margin:8px auto 60px;padding:0 24px}
+.kapak{position:relative;overflow:hidden;display:flex;justify-content:space-between;align-items:center;gap:30px;padding:38px;border-radius:26px;background:var(--ink);color:#fff}
+.kapak .eyebrow{color:#a5dec8;font-size:12px}
+.kapak h1{font-size:clamp(30px,4vw,44px);line-height:1.15;letter-spacing:-.02em;max-width:760px}
+.kapak p{color:#d7ebe5;margin:16px 0;max-width:780px}
+.kapak .cipler{display:flex;flex-wrap:wrap;gap:8px}
+.kapak .avatar{width:150px;border-radius:50%;border:4px solid #d2ebe0}
+.rapor-not{color:var(--muted);font-size:14px;margin:14px 22px}
+.sekmeler{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:22px 0}
+.sekmeler button{min-height:48px;padding:10px;border:1px solid transparent;border-radius:12px;background:none;color:var(--muted);font-size:15px;cursor:pointer}
+.sekmeler button[aria-selected="true"]{color:var(--teal);background:#fff;border-color:#b9d5ca;box-shadow:0 3px 10px #144d4310}
+.rapor-govde{padding:36px;min-height:380px}
+.rapor-govde h2{font-size:29px;margin:0 0 14px}
+.rapor-govde .alt-metin{color:var(--muted);max-width:80ch;margin-bottom:22px}
+.iki{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.uc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.an-kart{border-radius:18px;background:var(--mint2);padding:22px}
+.an-kart .ust-satir{display:flex;align-items:center;gap:12px;margin-bottom:10px;flex-wrap:wrap}
+.an-kart h3{font-size:19px}
+.an-kart p{color:var(--ink);font-size:15px}
+.an-kart .etk{margin-left:auto}
+.etk{font-size:12px;font-weight:750;padding:4px 10px;border-radius:99px;background:#fff;border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+.etk.guclu{background:var(--teal);border-color:var(--teal);color:#fff}
+.etk.dene{background:#fff3d1;border-color:#f1d79b;color:#765210}
+.dene-kutu{margin-top:22px;border-radius:18px;background:var(--cream);padding:22px}
+.dene-kutu h3{font-size:18px;margin-bottom:6px}
+.ilk-adim{margin-top:28px}
+.ilk-adim h3{font-size:17px;margin-bottom:6px}
+.ilk-adim p{color:var(--muted);margin-bottom:18px}
+.deneme{border:1px solid var(--line);border-radius:20px;padding:22px;background:#fff;display:flex;flex-direction:column}
+.deneme .sahne{display:block;width:100%;aspect-ratio:3/2;border-radius:14px;background-image:url(varlik/gorsel/kaya.jpg);background-size:200% 200%;margin-bottom:16px}
+.deneme .ust-satir{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.deneme h3{font-size:21px;line-height:1.25;margin:12px 0 4px}
+.deneme .yol{color:var(--teal);font-size:13px;font-weight:650}
+.deneme .bilgi{color:var(--muted);font-size:14px;margin:8px 0}
+.deneme ol{margin:8px 0 6px;padding-left:20px}
+.deneme li{margin:6px 0;font-size:15px}
+.deneme .durum-metin{font-size:15px;color:var(--ink);margin:10px 0}
+.deneme details{margin-top:6px}
+.deneme details summary{color:var(--teal);font-size:14px;font-weight:600}
+.deneme details p{font-size:14px;color:var(--muted)}
+.harita{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:32px;align-items:center}
+.harita svg{width:100%;max-width:360px;height:auto;display:block;margin:auto}
+.harita-liste>div{display:flex;align-items:center;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
+.harita-liste h3{font-size:16px}
+.harita-liste small{display:block;color:var(--muted);font-size:13px}
+.harita-liste b{margin-left:auto;font-size:20px}
+.harita-liste .bolum{font-size:12px;letter-spacing:.1em;font-weight:750;color:var(--teal);padding:18px 0 4px;border:0}
+.mektup{max-width:820px;margin:auto}
+.mektup p{color:var(--muted);line-height:1.8;margin:16px 0}
+.mektup img{width:100%;max-height:250px;object-fit:cover;border-radius:20px;margin:18px 0;display:block}
+.ipucu{border-radius:18px;background:var(--mint2);padding:20px}
+.ipucu b{display:block;color:var(--teal);margin-bottom:6px}
+.ipucu p{font-size:15px;color:var(--ink);margin:0}
+.plan{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:22px 0}
+.plan small{display:block;color:var(--teal);font-weight:750;font-size:12px;letter-spacing:.06em}
+.plan b{display:block;margin:4px 0}
+.plan p{font-size:14px;color:var(--muted);margin:0}
+.aile-sorular{background:var(--cream);border-radius:18px;padding:24px;margin-top:26px}
+.aile-sorular h3{font-size:20px;margin-bottom:10px}
+.aile-sorular p{margin:8px 0!important;color:var(--ink)!important;line-height:1.6!important}
+.tacev{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:14px}
+.tacev div{border:1px solid var(--line);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:12px}
+.tacev p{font-size:15px;color:var(--ink);margin:0}
+.aksiyon{display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:20px;margin-top:24px;padding:26px;border-radius:22px;background:var(--action)}
+.aksiyon h2{font-size:22px}
+.aksiyon p{color:var(--muted);font-size:14px;margin-top:8px;max-width:45ch}
+.aksiyon .onay{margin:10px 0 0}
+.aksiyon .birincil{font-size:15px;min-height:50px}
+.aksiyon-alt{display:flex;flex-wrap:wrap;gap:18px;margin-top:18px;align-items:center}
+.kaynak-kutu{margin-top:18px}
+.kaynak-kutu ul{padding-left:20px;color:var(--muted);font-size:15px}
+.kaynak-kutu p{color:var(--muted);font-size:15px;margin:8px 0}
+.pilot-kutu{margin-top:18px}
+table{width:100%;border-collapse:collapse;font-size:14px}td,th{padding:6px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.tablo-sar{overflow-x:auto}
+.kars td.esit{color:var(--teal);font-weight:800}
+.saklama{color:var(--muted);font-size:13px;margin-top:18px}
+footer{border-top:1px solid var(--line);max-width:1180px;margin:auto;padding:24px;display:flex;justify-content:space-between;align-items:center;gap:20px;color:var(--muted);font-size:13px}
+footer button,footer a{background:none;border:0;color:var(--muted);text-decoration:underline;cursor:pointer;font-size:13px;min-height:44px}
+#pdf{position:absolute;left:-10000px;top:0}
+.pdf-sayfa{width:794px;height:1123px;background:#fff;color:var(--ink);padding:0 56px;position:relative;font-size:14px;line-height:1.5;overflow:hidden}
+.pdf-sayfa .p-bar{height:12px;background:var(--teal);margin:0 -56px}
+.pdf-sayfa .p-bas{display:flex;justify-content:space-between;padding:18px 0 10px;border-bottom:2px solid #dcebe7;font-weight:700;color:var(--teal);font-size:15px}
+.pdf-sayfa .p-bas span{color:var(--muted);font-weight:500}
+.pdf-sayfa .p-eyebrow{color:var(--teal);font-weight:750;font-size:12px;letter-spacing:.06em;margin:18px 0 6px}
+.pdf-sayfa h1{font-size:32px;line-height:1.15;margin:0 0 8px}
+.pdf-sayfa h1 em{display:block;font-style:normal;color:var(--teal);font-size:24px}
+.pdf-sayfa h2{font-size:21px;margin:18px 0 8px}
+.pdf-sayfa .p-alt{position:absolute;left:56px;right:56px;bottom:26px;display:flex;justify-content:space-between;color:var(--muted);font-size:12px}
+.pdf-sayfa .p-alt b{color:var(--teal)}
+.pdf-sayfa .p-kutu{background:#edf6f3;border-radius:6px;padding:14px 16px}
+.pdf-sayfa .p-krem{background:#fff6dd;border-radius:6px;padding:14px 16px}
+.pdf-sayfa .p-iki{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pdf-sayfa .p-dort{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.pdf-sayfa p{margin:4px 0}
+.pdf-sayfa .p-yesil{background:var(--teal);color:#fff;font-weight:700;padding:12px 16px;font-size:13px}
+@media (max-width:900px){.giris{grid-template-columns:1fr;gap:30px}.harita{grid-template-columns:1fr}.aksiyon{grid-template-columns:1fr 1fr}.aksiyon>div:first-child{grid-column:1/-1}.uc{grid-template-columns:1fr}.plan{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){
+ html,body{font-size:16px}
+ .ust{flex-wrap:wrap;gap:8px;padding:18px 20px}.ust nav{width:100%;justify-content:space-between;gap:8px}.ust nav button{font-size:13px}
+ .giris{padding:10px 16px 40px}.giris h1{font-size:38px}.hero-art{height:160px;margin:20px 0 10px}
+ .panel{border-radius:20px;padding:22px}
+ .avatarlar small{font-size:10px;overflow-wrap:normal;word-break:keep-all;letter-spacing:-.02em}
+ .avatarlar{gap:5px}.avatarlar button{padding:3px}
+ .dar{padding:0 16px}.soru-ust .avatar{width:56px}.soru-ust p{font-size:14px}.soru h1{font-size:25px;margin:22px 0 18px}
+ .taraflar{grid-template-columns:minmax(0,1fr)}.ama{justify-self:center}
+ .soru-alt{grid-template-columns:110px 1fr;gap:10px}
+ .rapor{padding:0 16px}.kapak{align-items:flex-start;gap:15px;padding:25px 22px}.kapak h1{font-size:30px}.kapak .avatar{width:70px;border-width:2px}.kapak p{font-size:15px}
+ .sekmeler{grid-template-columns:repeat(2,1fr);gap:6px;margin:18px 0}
+ .rapor-govde{padding:22px}.rapor-govde h2{font-size:25px}
+ .iki,.tacev{grid-template-columns:minmax(0,1fr)}.plan{grid-template-columns:minmax(0,1fr)}
+ .aksiyon{grid-template-columns:minmax(0,1fr);padding:22px}.aksiyon>div:first-child{grid-column:auto}
+ footer{flex-direction:column;text-align:center;gap:6px}
 }
+@media print{.ust nav,.sekmeler,.aksiyon,footer,.bant,.saklama{display:none!important}body{background:#fff}.rapor-govde{box-shadow:none}}
 </style>
 </head>
 <body>
 <div id="duyuru" class="sr" aria-live="polite"></div>
-<main class="sayfa">
+<header class="ust">
+  <button class="marka" id="marka" type="button" aria-label="Başa dön">
+    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#123c40" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m16.2 7.8-2.1 6.3-6.3 2.1 2.1-6.3z"/></svg>
+    <span>Yörünge<small id="marka-alt"></small></span>
+  </button>
+  <nav aria-label="Yardımcı bağlantılar">
+    <button type="button" id="nasil-btn">Nasıl çalışır?</button>
+    <button type="button" id="sil-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6"/></svg>Yanıtlarımı sil / yeni çocuk</button>
+  </nav>
+</header>
+<div class="bant gizli" id="ornek-bant"><span id="ornek-bant-metin"></span><button type="button" id="ornek-don"></button></div>
 
-<section id="giris" aria-labelledby="g-baslik">
-  <h1 id="g-baslik" tabindex="-1"></h1>
-  <p class="soluk" id="g-alt"></p>
-  <div class="kutu devam-kutu gizli" id="devam-kutu">
-    <p id="devam-metin" style="font-weight:700"></p>
-    <div class="dugmeler"><button class="dugme" id="devam-et"></button><button class="dugme ikincil" id="yeni-test">Yeni test başlat</button></div>
+<main id="icerik">
+<section id="giris" class="giris" aria-labelledby="g-h1">
+  <div>
+    <span class="eyebrow" id="g-eyebrow"></span>
+    <h1 id="g-h1" tabindex="-1"></h1>
+    <p class="lead" id="g-lead"></p>
+    <img class="hero-art" src="varlik/gorsel/hero.jpg" alt="Birlikte ders çalışan çocukların çizimi">
+    <div class="guven"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#123c40" stroke-width="1.8" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg><p id="g-guven"></p></div>
+    <div class="adimlar" id="g-adimlar"></div>
+    <button type="button" class="yazi-dugme" id="ornek-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 4h7a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H2zM22 4h-7a3 3 0 0 0-3 3v13a2 2 0 0 1 2-2h8z"/></svg>Önce örnek bir rehber gör</button>
+    <details class="veli-bilgi"><summary>Veli için kısa bilgi</summary><p id="g-veli-bilgi"></p></details>
   </div>
-  <div id="giris-form">
-    <div class="maddeler">
-      <div><b aria-hidden="true">1</b><span id="g-m1"></span></div>
-      <div><b aria-hidden="true">2</b><span id="g-m2"></span></div>
-      <div><b aria-hidden="true">3</b><span id="g-m3"></span></div>
+  <div class="panel tanis">
+    <div id="devam-kutu" class="gizli">
+      <span class="eyebrow">KALDIĞIN YER</span>
+      <h2 id="devam-metin"></h2>
+      <button class="birincil" type="button" id="devam-et"></button>
+      <p style="margin-top:12px"><button class="yazi-dugme" type="button" id="yeni-test">Yeni test başlat</button></p>
     </div>
-    <div class="kutu">
-      <label class="alan" for="ad">Takma adın (isteğe bağlı; gerçek adını yazma)</label>
-      <input id="ad" maxlength="24" autocomplete="off">
-      <label class="alan" for="sinif">Sınıfın</label>
-      <select id="sinif"><option value="">Seç</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option></select>
-      <label class="onay gizli" id="onay-kutu"><input type="checkbox" id="onay"> <span>Cevaplarım takma adımla Öğrenme Alışkanlığı araştırmasına gönderilsin (velimin izniyle). Gerçek ad, okul ya da iletişim bilgisi gönderilmez.</span></label>
-      <div class="ornek" id="g-ornek"></div>
-      <button class="dugme" id="basla">Başla</button>
+    <div id="giris-form">
+      <span class="eyebrow">TANIŞALIM</span>
+      <h2>Sana nasıl seslenelim?</h2>
+      <label class="alan">Adın veya takma adın <span>(isteğe bağlı)</span><input type="text" id="ad" maxlength="24" autocomplete="off" placeholder="Örneğin Deniz"></label>
+      <label class="alan">Kaçıncı sınıftasın?<select id="sinif"><option value="4">4. sınıf</option><option value="5" selected>5. sınıf</option><option value="6">6. sınıf</option><option value="7">7. sınıf</option><option value="8">8. sınıf</option><option value="9">9. sınıf</option></select></label>
+      <fieldset><legend>Keşifte sana kim eşlik etsin?</legend><div class="avatarlar" id="avatarlar"></div></fieldset>
+      <div class="avatar-onizleme" id="avatar-onizleme"></div>
+      <button type="button" class="yazi-dugme" id="avatarsiz">Avatarsız devam et</button>
+      <label class="onay gizli" id="gonder-kutu"><input type="checkbox" id="gonder-onay"> <span>Cevaplarım takma adımla araştırmaya gönderilsin (velimin izniyle). Gerçek ad, okul ya da iletişim bilgisi gönderilmez.</span></label>
+      <label class="onay"><input type="checkbox" id="onay"> <span id="g-onay"></span></label>
+      <button class="birincil" type="button" id="basla" disabled><span id="g-baslat"></span><span aria-hidden="true">→</span></button>
+      <p class="kucuk-not" id="g-gizlilik"></p>
+      <div class="gizli" id="veli-giris" style="margin-top:14px"><span id="veli-durum" style="color:var(--teal);font-weight:700;font-size:14px"></span> <button class="yazi-dugme" type="button" id="veli-ac">Veliyseniz: önce tahmininizi girin (1 dakika)</button></div>
     </div>
-    <div class="dugmeler gizli" id="veli-giris"><span id="veli-durum" style="font-weight:700;color:var(--yesil-yazi)"></span><button class="dugme ikincil" id="veli-ac">Veliyseniz: önce tahmininizi girin (1 dakika)</button></div>
   </div>
 </section>
 
-<section id="veli" class="gizli" aria-labelledby="v-baslik">
-  <h1 id="v-baslik" tabindex="-1">Çocuğunuz hakkındaki tahmininiz</h1>
-  <p class="soluk">Çocuğunuz testi çözmeden önce doldurun. Her satırda çocuğunuza hangisi daha çok benziyor? İkisini de yapıyorsa daha sık yaptığı tarafta "Çoğu zaman böyle"yi seçin. Tahmininiz yalnız sonuç sayfasının en altındaki pilot bölümünde görünür.</p>
-  <div id="veli-liste"></div>
-  <div class="dugmeler"><button class="dugme" id="veli-kaydet">Kaydet ve çocuğunuza verin</button><button class="dugme ikincil" id="veli-vazgec">Vazgeç</button></div>
-  <p id="veli-uyari" role="alert" style="color:var(--vurgu-yazi);font-weight:700"></p>
-</section>
-
-<section id="soru" class="gizli" aria-labelledby="durum">
-  <div class="ust"><div class="ilerleme" id="ilerleme" role="progressbar" aria-label="İlerleme" aria-valuemin="0" aria-valuemax="28" aria-valuenow="0"><i id="cubuk"></i></div><div class="sayac" id="sayac" aria-hidden="true"></div></div>
-  <h2 class="durum" id="durum" tabindex="-1"></h2>
-  <div class="taraflar">
-    <div class="taraf" id="t-sol" role="group" aria-labelledby="k-sol m-sol"><span class="kim" id="k-sol">Bazı öğrenciler</span><p id="m-sol"></p>
-      <div class="secimler"><button class="secim tam" data-b="solTam">Hep böyle</button><button class="secim" data-b="solBiraz">Çoğu zaman böyle</button></div></div>
-    <div class="ama" aria-hidden="true">AMA</div>
-    <div class="taraf" id="t-sag" role="group" aria-labelledby="k-sag m-sag"><span class="kim" id="k-sag">Bazı öğrenciler ise</span><p id="m-sag"></p>
-      <div class="secimler"><button class="secim tam" data-b="sagTam">Hep böyle</button><button class="secim" data-b="sagBiraz">Çoğu zaman böyle</button></div></div>
+<section id="veli" class="dar gizli" aria-labelledby="v-h1">
+  <div class="panel">
+    <span class="eyebrow">VELİ İÇİN</span>
+    <h1 id="v-h1" tabindex="-1" style="font-size:30px;margin-bottom:12px">Çocuğunuz hakkındaki tahmininiz</h1>
+    <p style="color:var(--muted)">Çocuğunuz testi çözmeden önce doldurun. Her satırda çocuğunuza hangisi daha çok benziyor? İkisini de yapıyorsa daha sık yaptığı tarafta "Çoğu zaman böyle"yi seçin. Tahmininiz yalnız sonuç sayfasındaki pilot bölümünde görünür.</p>
+    <div id="veli-liste"></div>
+    <div class="soru-alt"><button class="ikincil" type="button" id="veli-vazgec">Vazgeç</button><button class="birincil" type="button" id="veli-kaydet">Kaydet ve çocuğunuza verin</button></div>
+    <p id="veli-uyari" role="alert" style="color:#a8551b;font-weight:700;margin-top:10px"></p>
   </div>
-  <div class="alt"><button class="dugme ikincil" id="geri">← Geri</button><span class="soluk" style="font-size:.9rem">İkisini de yapıyorsan daha sık yaptığını seç.</span></div>
-  <p id="kayit-uyari" class="soluk gizli" style="font-size:.85rem">Bu tarayıcı kayıt yapmaya izin vermiyor; sayfayı kapatırsan cevaplar kaybolur.</p>
 </section>
 
-<section id="mola" class="gizli ortala" aria-labelledby="mola-baslik">
-  <div class="buyuk" aria-hidden="true">⭐</div>
-  <h1 id="mola-baslik" tabindex="-1">Yarıyı geçtin!</h1>
-  <p id="mola-metin"></p>
-  <div class="dugmeler"><button class="dugme" id="devam">Devam et</button></div>
+<section id="alistirma" class="dar gizli" aria-labelledby="al-h1">
+  <div class="panel soru">
+    <div class="soru-ust"><div style="flex:1"><span class="eyebrow" id="al-eyebrow" style="margin-bottom:8px"></span><h1 id="al-h1" tabindex="-1" style="margin:0"></h1></div><span class="avatar" id="al-avatar"></span></div>
+    <p style="color:var(--muted);margin-top:18px" id="al-metin"></p>
+    <div class="ornek-kutu"><b id="al-not"></b><h2 style="font-size:22px;margin-top:4px" id="al-durum"></h2></div>
+    <div class="taraflar" id="al-taraflar"></div>
+    <div class="soru-alt"><button class="ikincil" type="button" id="al-geri">← Geri</button><button class="birincil" type="button" id="al-hazir"></button></div>
+  </div>
 </section>
 
-<section id="bitis" class="gizli ortala" aria-labelledby="bitis-baslik">
-  <div class="buyuk" aria-hidden="true">🎉</div>
-  <h1 id="bitis-baslik" tabindex="-1"></h1>
-  <div class="dugmeler"><button class="dugme" id="sonuca-git">Sonuçlarımı gör</button><button class="dugme ikincil" id="son-soru">← Son soruya dön</button></div>
+<section id="soru" class="dar gizli" aria-labelledby="durum">
+  <div class="panel soru">
+    <div class="ilerleme-bas"><span>BAK · KAYA keşfi</span><span id="sayac"></span></div>
+    <div class="ilerleme" id="ilerleme" role="progressbar" aria-label="İlerleme" aria-valuemin="0" aria-valuemax="28" aria-valuenow="0"><i id="cubuk"></i></div>
+    <div class="soru-ust"><p>Sana hangisi daha çok benziyor? İkisini de yapıyorsan daha sık yaptığını seç.</p><span class="avatar" id="s-avatar"></span></div>
+    <h1 id="durum" tabindex="-1"></h1>
+    <div class="taraflar">
+      <div class="taraf" id="t-sol" role="group" aria-labelledby="k-sol m-sol"><span class="kim" id="k-sol">Bazı öğrenciler</span><p id="m-sol"></p>
+        <div class="secimler"><button class="secim" type="button" data-b="solTam">Hep böyle</button><button class="secim" type="button" data-b="solBiraz">Çoğu zaman böyle</button></div></div>
+      <div class="ama" aria-hidden="true">AMA</div>
+      <div class="taraf" id="t-sag" role="group" aria-labelledby="k-sag m-sag"><span class="kim" id="k-sag">Bazı öğrenciler ise</span><p id="m-sag"></p>
+        <div class="secimler"><button class="secim" type="button" data-b="sagTam">Hep böyle</button><button class="secim" type="button" data-b="sagBiraz">Çoğu zaman böyle</button></div></div>
+    </div>
+    <div class="soru-alt"><button class="ikincil" type="button" id="geri">← Geri</button><span>Seçince bir sonraki duruma geçersin.</span></div>
+    <p id="kayit-uyari" class="kucuk-not gizli">Bu tarayıcı kayıt yapmaya izin vermiyor; sayfayı kapatırsan cevaplar kaybolur.</p>
+  </div>
 </section>
 
-<section id="sonuc" class="gizli" aria-labelledby="s-baslik">
-  <h1 id="s-baslik" tabindex="-1">Sonuçların</h1>
-  <p class="soluk" id="s-ust"></p>
+<section id="mola" class="dar gizli" aria-labelledby="mola-h1"><div class="panel ortala"><span class="avatar" id="m-avatar"></span><h1 id="mola-h1" tabindex="-1">Yarıyı geçtin!</h1><p id="mola-metin"></p><button class="birincil" type="button" id="devam">Devam et</button></div></section>
+<section id="bitis" class="dar gizli" aria-labelledby="bitis-h1"><div class="panel ortala"><span class="avatar" id="b-avatar"></span><h1 id="bitis-h1" tabindex="-1"></h1><p>Rehberin hazır. İstersen son duruma dönüp cevabını değiştirebilirsin.</p><button class="birincil" type="button" id="sonuca-git">Rehberimi göster</button><button class="yazi-dugme" type="button" id="son-soru">← Son duruma dön</button></div></section>
 
-  <div class="bolum-baslik"><span aria-hidden="true">BAK</span><h2>Öğrenme anların</h2></div>
-  <p class="soluk" id="s-anlar-giris"></p>
-  <div class="kutu">
-    <div class="sonuc-baslik" id="a-baslik"></div>
-    <div class="anlar" id="a-anlar"></div>
-    <p id="a-guc"></p>
-    <div class="dene-kutu" id="a-dene"></div>
+<section id="sonuc" class="rapor gizli" aria-labelledby="r-h1">
+  <div class="kapak">
+    <div>
+      <span class="eyebrow" id="r-eyebrow"></span>
+      <h1 id="r-h1" tabindex="-1"></h1>
+      <p id="r-ozet"></p>
+      <div class="cipler" id="r-cipler"></div>
+    </div>
+    <span class="avatar" id="r-avatar"></span>
+  </div>
+  <p class="rapor-not" id="r-not"></p>
+  <div class="sekmeler" role="tablist" aria-label="Rehber bölümleri" id="sekmeler"></div>
+
+  <div class="panel rapor-govde" role="tabpanel" id="p0" aria-labelledby="t0">
+    <span class="eyebrow" id="p0-eyebrow"></span>
+    <h2 id="p0-h2"></h2>
+    <p class="alt-metin" id="p0-alt"></p>
+    <div class="uc" id="bak-kartlar"></div>
+    <div class="dene-kutu" id="bak-dene"></div>
+    <div class="ilk-adim"><h3 id="ilk-adim"></h3><p id="ilk-adim-metin"></p><button class="birincil" type="button" id="denemelere-git"></button></div>
+  </div>
+  <div class="panel rapor-govde gizli" role="tabpanel" id="p1" aria-labelledby="t1">
+    <span class="eyebrow">KAYA · KALICI ÖĞRENMENİN DÖRT ANAHTARI</span>
+    <h2 id="p1-h2"></h2>
+    <p class="alt-metin" id="p1-alt"></p>
+    <div class="iki" id="kaya-kartlar"></div>
+  </div>
+  <div class="panel rapor-govde gizli" role="tabpanel" id="p2" aria-labelledby="t2">
+    <h2 id="p2-h2"></h2>
+    <p class="alt-metin" id="p2-alt"></p>
+    <div class="harita"><div id="harita-grafik"></div><div class="harita-liste" id="harita-liste"></div></div>
+  </div>
+  <div class="panel rapor-govde gizli" role="tabpanel" id="p3" aria-labelledby="t3">
+    <div class="mektup">
+      <span class="eyebrow" id="p3-eyebrow"></span>
+      <h2 id="p3-h2"></h2>
+      <img src="varlik/gorsel/aile.jpg" alt="Çocuğunu dinleyen anne ve baba">
+      <p id="veli-notu"></p>
+      <div class="uc" id="aile-ipuclari"></div>
+      <div class="plan" id="aile-plan"></div>
+      <div class="aile-sorular"><h3>Öğretmene not</h3><p id="ogretmen-notu"></p></div>
+      <h3 style="margin-top:26px;font-size:20px" id="tacev-baslik"></h3>
+      <div class="tacev" id="tacev"></div>
+      <p class="kucuk-not" id="tacev-not"></p>
+    </div>
   </div>
 
-  <div class="bolum-baslik"><span aria-hidden="true">KAYA</span><h2>Kalıcı öğrenme anahtarların</h2></div>
-  <p class="soluk" id="s-tuzak-giris"></p>
-  <div class="tuzaklar" id="tuzaklar"></div>
-
-  <div class="dugmeler">
-    <button class="dugme" id="kart-yap">Paylaşım kartını indir</button>
-    <button class="dugme ikincil" id="yazdir">Yazdır / PDF</button>
+  <div class="aksiyon">
+    <div><h2 id="ak-baslik"></h2><p id="ak-alt"></p><label class="onay"><input type="checkbox" id="pdf-ad" checked> <span id="ak-pdf-ad"></span></label></div>
+    <button class="ikincil" type="button" id="pdf-indir"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg><span id="ak-pdf"></span></button>
+    <a class="birincil" id="ak-tacev" target="_blank" rel="noopener"></a>
   </div>
-  <p id="kart-not" class="soluk" style="font-size:.9rem"></p>
-
-  <details id="yetiskin" open>
-    <summary>Veliler ve öğretmenler için</summary>
-    <h3>Veliye not</h3><p id="veli-notu"></p>
-    <h3>Öğretmene not</h3><p id="ogretmen-notu"></p>
-    <h3>Bu test neye dayanıyor?</h3><ul id="dayanak"></ul>
-    <p class="soluk" id="sinir"></p>
-  </details>
-
-  <details id="pilot" class="gizli">
-    <summary>Pilot: cevap dökümü</summary>
-    <div id="d-ozet"></div>
-    <div id="d-veli"></div>
-    <p id="gonder-durum" style="font-weight:700"></p>
-    <div class="tablo-sar"><table id="d-tablo"></table></div>
-    <div class="dugmeler"><button class="dugme ikincil" id="kopyala">Cevapları kopyala</button><button class="dugme ikincil" id="indir">Dosya olarak indir</button></div>
-    <p id="kopya-not" class="soluk" style="font-size:.85rem"></p>
-  </details>
-
-  <p class="not no-print" id="saklama"></p>
-  <div class="dugmeler"><button class="dugme ikincil" id="yeniden">Yeni test başlat</button></div>
+  <p id="pdf-durum" class="kucuk-not" role="status"></p>
+  <div class="aksiyon-alt">
+    <button class="yazi-dugme" type="button" id="kart-yap"></button>
+    <button class="yazi-dugme" type="button" id="kaynak-ac"></button>
+    <button class="yazi-dugme" type="button" id="yeniden">Yeni test başlat</button>
+  </div>
+  <p id="kart-not" class="kucuk-not"></p>
+  <details class="panel kaynak-kutu" id="kaynak"><summary>Kaynaklar, yöntem ve sınırlar</summary><ul id="dayanak"></ul><p id="sinir"></p></details>
+  <details class="panel pilot-kutu gizli" id="pilot"><summary>Pilot: cevap dökümü</summary><div id="d-ozet"></div><div id="d-veli"></div><p id="gonder-durum" style="font-weight:700"></p><div class="tablo-sar"><table id="d-tablo"></table></div><p><button class="ikincil" type="button" id="kopyala">Cevapları kopyala</button> <button class="ikincil" type="button" id="indir">Dosya olarak indir</button></p><p id="kopya-not" class="kucuk-not"></p></details>
+  <p class="saklama" id="saklama"></p>
 </section>
-
-<footer class="no-print">Aynı aileden: <a href="https://raufenc.com/ilgitesti/" target="_blank" rel="noopener">İlgi Testi</a></footer>
 </main>
+
+<footer><span>Yörünge · TACEV</span><span id="f-slogan"></span><span><a id="f-ilgi" target="_blank" rel="noopener">İlgi Testi</a> · <button type="button" id="f-kaynak">Kaynaklar, sınırlar ve gizlilik</button></span></footer>
+
+<div id="pdf" aria-hidden="true"></div>
+
 <script>
-const VERI = {"sorular": [{"no": 1, "id": "P1", "olcek": "P", "durum": "Matematik ödevinde on soru var.", "sol": "vakit kaybetmemek için hemen ilk sorudan başlar.", "sag": "başlamadan sorulara göz atıp nereden başlayacağına karar verir.", "kaliciSol": false}, {"no": 2, "id": "B11", "olcek": "T1", "durum": "Yazılıya çalışırken konuyu bir kez okudun; beş dakikan daha var.", "sol": "konuyu iyice anlamak için bir kez daha okur.", "sag": "kitabı kapatıp öğrendiklerini hatırlamaya çalışır.", "kaliciSol": false}, {"no": 3, "id": "M2", "olcek": "M", "durum": "Türkçede uzun bir metin okuyorsun.", "sol": "anlamadığı bir yer olunca durup o cümleyi anlamaya çalışır.", "sag": "hızını kesmemek için anlamasa da okumayı sürdürür.", "kaliciSol": true}, {"no": 4, "id": "B31", "olcek": "T3", "durum": "Kesir, ondalık ve yüzde için iki alıştırma kâğıdı var: birinde aynı tür sorular bir arada, ötekinde hepsi karışık.", "sol": "hangi tür olduğunu kendisi bulsun diye karışık kâğıdı seçer.", "sag": "kafası karışmasın diye aynı tür soruların bir arada olduğu kâğıdı seçer.", "kaliciSol": true}, {"no": 5, "id": "E3", "olcek": "E", "durum": "Oynadığın oyunda bir bölümü kaybettin.", "sol": "hiç oyalanmadan hemen yeniden başlar.", "sag": "önce neden kaybettiğini düşünür.", "kaliciSol": false}, {"no": 6, "id": "B22", "olcek": "T2", "durum": "Yirmi İngilizce kelimeyi bir hafta sonra bilmen gerek; toplam otuz dakikan var.", "sol": "hepsini bir arada görmek için tek oturuşta çalışır.", "sag": "aynı kelimelere üç ayrı gün onar dakika çalışır.", "kaliciSol": false}, {"no": 7, "id": "B42", "olcek": "T4", "durum": "Sosyal bilgiler kitabında bir olayın sonuçlarını anlatan paragrafı okuyorsun.", "sol": "okuyunca \"Bu neden böyle?\" diye sebebini düşünür.", "sag": "göze çarpsın diye önemli yerlerin altını renkli kalemle çizer.", "kaliciSol": true}, {"no": 8, "id": "P2", "olcek": "P", "durum": "Bir hikâye ya da yazı yazacaksın.", "sol": "yazmaya başlamadan neler yazacağını kafasında sıralar.", "sag": "aklına geldikçe yazar; yazdıkça fikir bulur.", "kaliciSol": true}, {"no": 9, "id": "B13", "olcek": "T1", "durum": "Kısa bir anlatım videosu izledin; her şey anlaşılır geldi. Beş dakikan daha var.", "sol": "videoyu kapatıp aklında kalanları hatırlamaya çalışır.", "sag": "unutmamak için videoyu yeniden izler.", "kaliciSol": true}, {"no": 10, "id": "M4", "olcek": "M", "durum": "Bir yazılı sınavda soruları çözüyorsun.", "sol": "dikkati dağılmasın diye saate bakmadan çözer.", "sag": "hızını ayarlamak için ara ara saate bakar.", "kaliciSol": false}, {"no": 11, "id": "B32", "olcek": "T3", "durum": "Test kitabında hem konu konu testler hem de birkaç konunun karıştığı \"tarama\" testleri var.", "sol": "konuları ayrı ayrı çalışmak için konu testlerini çözer.", "sag": "kendini denemek için konuların karıştığı testleri çözer.", "kaliciSol": false}, {"no": 12, "id": "E1", "olcek": "E", "durum": "Matematik ödevini bitirdin.", "sol": "bitirince en çok zorlandığı soruya bir daha bakar.", "sag": "kalan vakti öbür ödeve ayırmak için defteri kapatır.", "kaliciSol": true}, {"no": 13, "id": "B25", "olcek": "T2", "durum": "Matematikte yeni kurallar öğrendin; bu hafta bir saat çalışabilirsin.", "sol": "aynı kurallara üç gün yirmişer dakika çalışır.", "sag": "kurallar bölünmesin diye bir saati tek oturuşta çalışır.", "kaliciSol": true}, {"no": 14, "id": "B34", "olcek": "T3", "durum": "Alan hesabı için iki kâğıt var: biri şekillere göre sıralı, öteki karışık.", "sol": "düzenli ilerlemek için şekillere göre sıralı kâğıdı seçer.", "sag": "formülleri ayırt etmek için şekillerin karışık geldiği kâğıdı seçer.", "kaliciSol": false}, {"no": 15, "id": "B26", "olcek": "T2", "durum": "Derste öğrendiğin bir konuya bu hafta toplam kırk dakika ayıracaksın.", "sol": "aynı konuya dört gün onar dakika çalışır.", "sag": "konu dağılmasın diye kırk dakikayı tek seferde çalışır.", "kaliciSol": true}, {"no": 16, "id": "E2", "olcek": "E", "durum": "Yazılı kâğıdın sana gösterildi.", "sol": "yanlış yaptığı soruların nedenine bakar.", "sag": "yeni konuya odaklanmak için yalnızca notuna bakar.", "kaliciSol": true}, {"no": 17, "id": "B41", "olcek": "T4", "durum": "Fen kitabın açıkken bir konunun özetini çıkaracaksın.", "sol": "eksik kalmasın diye önemli cümleleri aynen defterine yazar.", "sag": "anladığı şekilde konuyu kendi cümleleriyle yazar.", "kaliciSol": false}, {"no": 18, "id": "P6", "olcek": "P", "durum": "Öğretmen yeni bir ödev verdi; yönergesi biraz uzun.", "sol": "başlamadan ne istendiğini iyice anladığından emin olur.", "sag": "vakit kaybetmemek için yönergeye göz gezdirip hemen başlar.", "kaliciSol": true}, {"no": 19, "id": "B12", "olcek": "T1", "durum": "Yeni İngilizce kelimelere bir kez baktın; on dakikan daha var.", "sol": "Türkçe anlamları kapatıp kelimeleri hatırlamaya çalışır.", "sag": "iyice otursun diye listeyi birkaç kez okur.", "kaliciSol": true}, {"no": 20, "id": "M1", "olcek": "M", "durum": "Uzun bir matematik problemini çözüyorsun.", "sol": "kafası karışmasın diye seçtiği yoldan sonuna kadar gider.", "sag": "her adımda bulduğu sayının mantıklı olup olmadığına bakar.", "kaliciSol": false}, {"no": 21, "id": "B39", "olcek": "T3", "durum": "Fen dersinde katı, sıvı ve gaz örneklerini ayırt etmeyi çalışıyorsun; iki alıştırma var: biri hâllere göre sıralı, öteki karışık.", "sol": "hangi hâl olduğunu ayırt etmek için karışık alıştırmayı seçer.", "sag": "her hâli tek tek görmek için sıralı alıştırmayı seçer.", "kaliciSol": true}, {"no": 22, "id": "E4", "olcek": "E", "durum": "Bir hikâye ya da yazı yazmayı bitirdin.", "sol": "ilk hâlini çok beğendiği için olduğu gibi teslim eder.", "sag": "teslim etmeden önce baştan okuyup nasıl olduğuna bakar.", "kaliciSol": false}, {"no": 23, "id": "B27", "olcek": "T2", "durum": "Bir hafta sonra okulda bir şiir okuyacaksın; toplam yarım saat çalışacaksın.", "sol": "şiir bölünmesin diye yarım saati tek seferde çalışır.", "sag": "şiire üç ayrı gün onar dakika çalışır.", "kaliciSol": false}, {"no": 24, "id": "B46", "olcek": "T4", "durum": "Fen kitabında bir deneyin nasıl yapıldığı adım adım anlatılıyor.", "sol": "hiçbir adım kaçmasın diye adımları aynen defterine yazar.", "sag": "her adımın neden yapıldığını kendi cümlesiyle not alır.", "kaliciSol": false}, {"no": 25, "id": "P4", "olcek": "P", "durum": "Bu akşam üç dersten ödevin var.", "sol": "sıra seçmekle oyalanmadan ilk bulduğu ödevle başlar.", "sag": "önce hangi ödevi hangi sırayla yapacağına karar verir.", "kaliciSol": false}, {"no": 26, "id": "B16", "olcek": "T1", "durum": "Fen dersindeki tanımları bir kez okudun; beş dakikan daha var.", "sol": "tanımları defterden birkaç kez dikkatle okur.", "sag": "defteri kapatıp tanımları hatırlamaya çalışır.", "kaliciSol": false}, {"no": 27, "id": "M5", "olcek": "M", "durum": "Beden eğitiminde yeni bir hareketi deniyorsun.", "sol": "her denemede yanlış giden yeri fark edip düzeltir.", "sag": "vücudu alışsın diye hareketi değiştirmeden birkaç kez tekrar eder.", "kaliciSol": true}, {"no": 28, "id": "B45", "olcek": "T4", "durum": "Fen kitabında \"Kaktüslerin yaprakları diken şeklindedir.\" bilgisini okuyorsun.", "sol": "\"Neden diken şeklinde?\" diye sorup cevabını düşünür.", "sag": "aklında kalsın diye cümlenin altını çizer.", "kaliciSol": true}], "metin": {"giris": {"baslik": "Öğrenme Alışkanlığı Testi", "alt": "BAK · KAYA — 7 dakikada nasıl çalıştığını keşfet.", "madde1": "<strong>28 kısa durum</strong> göreceksin; yaklaşık 7 dakika sürer.", "madde2": "Her durumda iki öğrenci var. <strong>Doğru ya da yanlış cevap yok;</strong> iki yol da öğrencilerin gerçekten yaptığı şeyler.", "madde3": "Sana hangisi daha çok benziyorsa onun altından <strong>\"Hep böyle\"</strong> ya da <strong>\"Çoğu zaman böyle\"</strong> seç. İkisini de yapıyorsan, daha sık yaptığın tarafta \"Çoğu zaman böyle\"yi seç.", "ornek": "<strong>Örnek:</strong> Bazı öğrenciler kahvaltıda çay içer, <em>ama</em> bazı öğrenciler süt içer. Hep süt içiyorsan süt tarafında <strong>\"Hep böyle\"</strong>yi seçersin. Bazen çay da içiyor ama çoğu zaman süt içiyorsan süt tarafında <strong>\"Çoğu zaman böyle\"</strong>yi seçersin."}, "mola": "Yarıyı geçtin, çok iyi gidiyorsun! Kalan 14 durumda da ilk aklına geleni seçmen yeter.", "bitis": "Tamamladın! Sonuçların hazır.", "sonuc_ust": "Bu sonuç bugünkü cevaplarına göre çekilmiş bir fotoğraf. Not ya da karne değil; alışkanlıkların değiştikçe sonuç da değişir.", "anlar_giris": "BAK, öğrenmenin üç anıdır: Başlarken plan yaparsın, Arada kontrol edersin, Kapanışta ders çıkarırsın. Cevaplarında hangisi daha önde?", "tuzaklar_giris": "KAYA, bilgiyi kaya gibi kalıcı yapan dört anahtardır. Beynimiz bazen o an kolay gelen yolu seçer; bunu herkes yapar. Dört anahtarda bugünkü durumun:", "anlar": {"P": {"ad": "Başlarken", "alt": "plan yap", "guc": "Bir ödeve ya da işe girişmeden önce ne istendiğine bakıyor, ne yapacağını kafanda sıralıyorsun.", "dene": "Bu hafta bir ödeve başlamadan önce 10 saniye dur ve içinden sor: \"İlk neyi yapacağım?\"", "harf": "B"}, "M": {"ad": "Arada", "alt": "kontrol et", "guc": "Çalışırken arada durup \"Doğru mu gidiyorum?\" diye bakıyor, takılınca yolunu değiştirebiliyorsun.", "dene": "Bu hafta okuduğun ya da çözdüğün bir şeyin tam ortasında kalemi bir kez bırak ve sor: \"Buraya kadar ne anladım?\"", "harf": "A"}, "E": {"ad": "Kapanışta", "alt": "ders çıkar", "guc": "Bir işi bitirince hemen kapatıp gitmiyor, nerede zorlandığına ve neyin işe yaradığına bakıyorsun.", "dene": "Bu hafta bir ödev bitince kalkmadan 15 saniye düşün: \"Bugün hangi çalışma yolu en çok işime yaradı? Bir dahakine neyi farklı yaparım?\"", "harf": "K"}}, "etiketler": {"guclu": "En güçlü", "orta": "Gelişiyor", "dene": "Gelişmeye açık", "esit": "Birbirine yakın", "esit_yuksek": "Üçü de güçlü"}, "dengeli": {"yuksek": {"baslik": "Üç anı da güçlü kullanıyorsun", "metin": "Başlarken plan yapmayı, Arada kontrol etmeyi ve Kapanışta ders çıkarmayı bir arada kullanıyorsun. Zor bir derste bu üçünden hangisinin en çok işine yaradığına dikkat et."}, "orta": {"baslik": "Üç an birbirine yakın", "metin": "Başlarken, Arada ve Kapanışta; üç ana da benzer ölçüde yer veriyorsun. Bu hafta ödevlerinde birini biraz daha öne çıkarıp farkı görebilirsin."}, "dusuk": {"baslik": "Üç an birbirine yakın", "metin": "Üç ana da benzer ölçüde yer veriyorsun; şu an ödeve duraksamadan hemen başlamayı seçiyorsun. Başlamadan önce kısa bir durak eklemek işini kolaylaştırabilir.", "dene_olcek": "P"}}, "tuzaklar": {"T1": {"ad": "Aklından söyle", "ozet": "Kitabı kapat, aklında kalanı söyle", "kolay": "Sayfayı tekrar okuyunca gözüne tanıdık gelir ve bildiğini hissedersin; ama tanıdık gelmek tek başına hatırlamak demek değildir. Bu hafta okuduğun bir sayfanın sonunda kitabı kapat ve aklında kalan iki cümleyi kendine anlat.", "arada": "Bazen kitabı kapatıp hatırlamaya çalışıyorsun; bu çok işe yarayan bir alışkanlık. Bu hafta bir konuyu okuduktan sonra kitabı kapatıp aklında kalanları sesli söylemeyi bir kez daha dene.", "kalici": "Okuduktan sonra kitabı kapatıp aklından hatırlamaya çalışıyorsun. Bilginin uzun süre akılda kalmasının en sağlam yollarından biri bu.", "harf": "A", "kolay_yol": "Kolay gelen yol: aynı sayfayı tekrar tekrar okumak"}, "T2": {"ad": "Yay", "ozet": "Çalışmayı günlere yay", "kolay": "Çalışmayı tek oturuşa ya da son geceye sığdırmak o an içini rahatlatır ama bilgi birkaç günde uçup gider. Bu hafta kısa bir konuyu tek seferde yarım saat yerine iki ayrı gün on beşer dakika çalış.", "arada": "Zaman zaman çalışmanı günlere yayıyorsun. Bu hafta bir konuyu aynı gün bitirmek yerine ertesi güne de on dakikalık küçük bir parça bırak.", "kalici": "Çalışmanı tek güne yığmak yerine günlere bölüyorsun. Böyle aralıklı çalışmak bilginin uzun süre akılda kalmasına yardım eder.", "harf": "Y", "kolay_yol": "Kolay gelen yol: hepsini tek oturuşta çalışmak"}, "T3": {"ad": "Karıştır", "ozet": "Farklı soru türlerini karışık çöz", "kolay": "Aynı tür soruları art arda çözmek hızlı akar; ama sınavda sorular karışık gelince hangi yolu seçeceğini bulmak zorlaşır. Bu hafta alıştırmanın son üç dört sorusunu farklı konulardan karışık seç.", "arada": "Arada bir karışık sorularla kendini deniyorsun. Bu hafta bir konuyu öğrendikten sonra farklı türlerden üç beş karışık soru çöz.", "kalici": "Farklı tür soruları karıştırarak çözmeyi seçiyorsun. Böylece hangi soruda hangi yolu kullanacağını ayırt etmeyi de öğreniyorsun.", "harf": "K", "kolay_yol": "Kolay gelen yol: aynı tür soruları art arda çözmek"}, "T4": {"ad": "Anlat", "ozet": "Kendi cümlenle anlat, \"neden?\" diye sor", "kolay": "Altını renkli çizmek ya da aynen deftere geçirmek notları düzenli gösterir; ama kendi cümlenle yazmadıkça bilgi akılda kalmakta zorlanır. Bu hafta bir paragraf okuyunca kenarına kendi cümlenle tek bir \"Neden böyle?\" notu yaz.", "arada": "Zaman zaman okuduklarını kendi cümlenle yazıp \"neden?\" diye soruyorsun. Bu hafta önemli bir yerin altını çizdikten sonra \"Bunu arkadaşıma tek cümleyle nasıl anlatırdım?\" diye kendi cümleni ekle.", "kalici": "Bilgiyi kopyalamak yerine kendi cümlenle yazıyor ve nedenini soruyorsun. Bilgiyi kalıcı yapmanın en güzel yollarından biri bu.", "harf": "A", "kolay_yol": "Kolay gelen yol: aynen yazmak, altını çizmek"}}, "durumlar": {"kolay": "Kolay zeminde", "arada": "Sağlamlaşıyor", "kalici": "Kaya gibi"}, "paylasim": {"dengeli": "BAK'ta üç anım birbirine yakın.", "dengeli_yuksek": "BAK'ta üç anımı da güçlü kullanıyorum.", "P": "Öğrenirken en güçlü anım: Başlarken plan yapmak.", "M": "Öğrenirken en güçlü anım: Arada kontrol etmek.", "E": "Öğrenirken en güçlü anım: Kapanışta ders çıkarmak.", "PM": "En güçlü anlarım: Başlarken plan yapmak ve Arada kontrol etmek.", "PE": "En güçlü anlarım: Başlarken plan yapmak ve Kapanışta ders çıkarmak.", "ME": "En güçlü anlarım: Arada kontrol etmek ve Kapanışta ders çıkarmak."}, "veli_notu": "Bu sonuç çocuğunuzun kalıcı bir özelliği ya da başarısı değil; bugünkü çalışma alışkanlıklarının bir fotoğrafıdır. BAK, öğrenmenin üç anını gösterir: Başlarken plan yapmak, Arada kontrol etmek, Kapanışta ders çıkarmak. KAYA ise kalıcı öğrenmenin dört anahtarıdır: Karıştır, Aklından söyle, Yay, Anlat. Konuşurken \"Neden son geceye bırakıyorsun?\" gibi yargılayan cümlelerden kaçının. Bunun yerine \"Sonuçta seni şaşırtan bir şey oldu mu?\" ya da \"Bu hafta hangi küçük adımı birlikte deneyelim?\" diye merakla sorun. Tek bir küçük adımı rahatça ve kendi hızında denemesine alan açmanız yeterlidir.", "ogretmen_notu": "Bu sonuç bir not, düzey belirleme ya da tanı değil; öğrencinin bugünkü çalışma alışkanlıklarına tutulan kısa bir aynadır. Öğrencileri gruplamak ya da karşılaştırmak yerine BAK ve KAYA'yı sınıfın ortak dili olarak kullanabilirsiniz: \"Başlarken ne yapıyoruz?\", \"Bugün hangi KAYA anahtarını deneyelim?\" Derste beş dakikalık \"kitabı kapat, aklından söyle\" ya da \"karışık iki soru çöz\" uygulamaları anahtarları doğal biçimde gösterir.", "dayanak": ["BAK (öğrenme anları): Zimmerman (2002), öz düzenlemeli öğrenme döngüsü; Schraw ve Dennison (1994), planlama–izleme–değerlendirme.", "K — Karıştır: Rohrer ve ark. (2020); Brunmair ve Richter (2019).", "A — Aklından söyle: Roediger ve Karpicke (2006); Agarwal ve ark. (2021).", "Y — Yay: Cepeda ve ark. (2006); Dunlosky ve ark. (2013).", "A — Anlat: Dunlosky ve ark. (2013); Bisra ve ark. (2018); Wood ve ark. (1990, 1993).", "Soru biçimi: Harter (1982), çocuklar için yapılandırılmış seçenek biçimi."], "sinir": "Bu bir tanı ya da not aracı değildir ve öğrencileri birbiriyle karşılaştırmaz. Sorular öğrenme psikolojisi araştırmalarına dayanır ve uzman incelemesinden geçmiştir; geniş bir öğrenci grubuyla geçerlik çalışması henüz yapılmamıştır.", "veli": [{"olcek": "P", "duzenleyen": "Bir işe başlamadan ne istendiğine bakar, plan yapar.", "kolay": "Bir işe vakit kaybetmeden hemen girişir."}, {"olcek": "M", "duzenleyen": "İş sürerken doğru gidip gitmediğini kontrol eder.", "kolay": "Başladığı yoldan durmadan sonuna kadar gider."}, {"olcek": "E", "duzenleyen": "İş bitince nasıl geçtiğine, neyin işe yaradığına bakar.", "kolay": "İş bitince hemen sıradaki işe geçer."}, {"olcek": "T1", "duzenleyen": "Ders çalışırken kitabı kapatıp hatırlamaya çalışır.", "kolay": "Ders çalışırken konuyu birkaç kez tekrar okur."}, {"olcek": "T2", "duzenleyen": "Çalışmasını birkaç güne böler.", "kolay": "Çalışmasını tek oturuşta, genelde sınavdan önceki gün yapar."}, {"olcek": "T3", "duzenleyen": "Farklı tür soruları karışık çözer.", "kolay": "Aynı tür soruları art arda çözer."}, {"olcek": "T4", "duzenleyen": "Kendi cümlesiyle yazar, \"Bu neden böyle?\" diye sorar.", "kolay": "Önemli yerleri aynen yazar ya da altını çizer."}], "dusuk_baslik": "Cevaplarında biraz öne çıkan an: {ad}", "dusuk_guc": "Cevaplarında üç an da daha çok \"hemen başla\" tarafında; aralarında {ad} biraz öne çıkıyor.", "kaya_sira": ["T3", "T1", "T2", "T4"]}, "surum": "1.0-deneme", "gonder": {"form_url": "", "alan": ""}};
+const VERI = {"sorular": [{"no": 1, "id": "P1", "olcek": "P", "durum": "Matematik ödevinde on soru var.", "sol": "vakit kaybetmemek için hemen ilk sorudan başlar.", "sag": "başlamadan sorulara göz atıp nereden başlayacağına karar verir.", "kaliciSol": false}, {"no": 2, "id": "B11", "olcek": "T1", "durum": "Yazılıya çalışırken konuyu bir kez okudun; beş dakikan daha var.", "sol": "konuyu iyice anlamak için bir kez daha okur.", "sag": "kitabı kapatıp öğrendiklerini hatırlamaya çalışır.", "kaliciSol": false}, {"no": 3, "id": "M2", "olcek": "M", "durum": "Türkçede uzun bir metin okuyorsun.", "sol": "anlamadığı bir yer olunca durup o cümleyi anlamaya çalışır.", "sag": "hızını kesmemek için anlamasa da okumayı sürdürür.", "kaliciSol": true}, {"no": 4, "id": "B31", "olcek": "T3", "durum": "Kesir, ondalık ve yüzde için iki alıştırma kâğıdı var: birinde aynı tür sorular bir arada, ötekinde hepsi karışık.", "sol": "hangi tür olduğunu kendisi bulsun diye karışık kâğıdı seçer.", "sag": "kafası karışmasın diye aynı tür soruların bir arada olduğu kâğıdı seçer.", "kaliciSol": true}, {"no": 5, "id": "E3", "olcek": "E", "durum": "Oynadığın oyunda bir bölümü kaybettin.", "sol": "hiç oyalanmadan hemen yeniden başlar.", "sag": "önce neden kaybettiğini düşünür.", "kaliciSol": false}, {"no": 6, "id": "B22", "olcek": "T2", "durum": "Yirmi İngilizce kelimeyi bir hafta sonra bilmen gerek; toplam otuz dakikan var.", "sol": "hepsini bir arada görmek için tek oturuşta çalışır.", "sag": "aynı kelimelere üç ayrı gün onar dakika çalışır.", "kaliciSol": false}, {"no": 7, "id": "B42", "olcek": "T4", "durum": "Sosyal bilgiler kitabında bir olayın sonuçlarını anlatan paragrafı okuyorsun.", "sol": "okuyunca \"Bu neden böyle?\" diye sebebini düşünür.", "sag": "göze çarpsın diye önemli yerlerin altını renkli kalemle çizer.", "kaliciSol": true}, {"no": 8, "id": "P2", "olcek": "P", "durum": "Bir hikâye ya da yazı yazacaksın.", "sol": "yazmaya başlamadan neler yazacağını kafasında sıralar.", "sag": "aklına geldikçe yazar; yazdıkça fikir bulur.", "kaliciSol": true}, {"no": 9, "id": "B13", "olcek": "T1", "durum": "Kısa bir anlatım videosu izledin; her şey anlaşılır geldi. Beş dakikan daha var.", "sol": "videoyu kapatıp aklında kalanları hatırlamaya çalışır.", "sag": "unutmamak için videoyu yeniden izler.", "kaliciSol": true}, {"no": 10, "id": "M4", "olcek": "M", "durum": "Bir yazılı sınavda soruları çözüyorsun.", "sol": "dikkati dağılmasın diye saate bakmadan çözer.", "sag": "hızını ayarlamak için ara ara saate bakar.", "kaliciSol": false}, {"no": 11, "id": "B32", "olcek": "T3", "durum": "Test kitabında hem konu konu testler hem de birkaç konunun karıştığı \"tarama\" testleri var.", "sol": "konuları ayrı ayrı çalışmak için konu testlerini çözer.", "sag": "kendini denemek için konuların karıştığı testleri çözer.", "kaliciSol": false}, {"no": 12, "id": "E1", "olcek": "E", "durum": "Matematik ödevini bitirdin.", "sol": "bitirince en çok zorlandığı soruya bir daha bakar.", "sag": "kalan vakti öbür ödeve ayırmak için defteri kapatır.", "kaliciSol": true}, {"no": 13, "id": "B25", "olcek": "T2", "durum": "Matematikte yeni kurallar öğrendin; bu hafta bir saat çalışabilirsin.", "sol": "aynı kurallara üç gün yirmişer dakika çalışır.", "sag": "kurallar bölünmesin diye bir saati tek oturuşta çalışır.", "kaliciSol": true}, {"no": 14, "id": "B34", "olcek": "T3", "durum": "Alan hesabı için iki kâğıt var: biri şekillere göre sıralı, öteki karışık.", "sol": "düzenli ilerlemek için şekillere göre sıralı kâğıdı seçer.", "sag": "formülleri ayırt etmek için şekillerin karışık geldiği kâğıdı seçer.", "kaliciSol": false}, {"no": 15, "id": "B26", "olcek": "T2", "durum": "Derste öğrendiğin bir konuya bu hafta toplam kırk dakika ayıracaksın.", "sol": "aynı konuya dört gün onar dakika çalışır.", "sag": "konu dağılmasın diye kırk dakikayı tek seferde çalışır.", "kaliciSol": true}, {"no": 16, "id": "E2", "olcek": "E", "durum": "Yazılı kâğıdın sana gösterildi.", "sol": "yanlış yaptığı soruların nedenine bakar.", "sag": "yeni konuya odaklanmak için yalnızca notuna bakar.", "kaliciSol": true}, {"no": 17, "id": "B41", "olcek": "T4", "durum": "Fen kitabın açıkken bir konunun özetini çıkaracaksın.", "sol": "eksik kalmasın diye önemli cümleleri aynen defterine yazar.", "sag": "anladığı şekilde konuyu kendi cümleleriyle yazar.", "kaliciSol": false}, {"no": 18, "id": "P6", "olcek": "P", "durum": "Öğretmen yeni bir ödev verdi; yönergesi biraz uzun.", "sol": "başlamadan ne istendiğini iyice anladığından emin olur.", "sag": "vakit kaybetmemek için yönergeye göz gezdirip hemen başlar.", "kaliciSol": true}, {"no": 19, "id": "B12", "olcek": "T1", "durum": "Yeni İngilizce kelimelere bir kez baktın; on dakikan daha var.", "sol": "Türkçe anlamları kapatıp kelimeleri hatırlamaya çalışır.", "sag": "iyice otursun diye listeyi birkaç kez okur.", "kaliciSol": true}, {"no": 20, "id": "M1", "olcek": "M", "durum": "Uzun bir matematik problemini çözüyorsun.", "sol": "kafası karışmasın diye seçtiği yoldan sonuna kadar gider.", "sag": "her adımda bulduğu sayının mantıklı olup olmadığına bakar.", "kaliciSol": false}, {"no": 21, "id": "B39", "olcek": "T3", "durum": "Fen dersinde katı, sıvı ve gaz örneklerini ayırt etmeyi çalışıyorsun; iki alıştırma var: biri hâllere göre sıralı, öteki karışık.", "sol": "hangi hâl olduğunu ayırt etmek için karışık alıştırmayı seçer.", "sag": "her hâli tek tek görmek için sıralı alıştırmayı seçer.", "kaliciSol": true}, {"no": 22, "id": "E4", "olcek": "E", "durum": "Bir hikâye ya da yazı yazmayı bitirdin.", "sol": "ilk hâlini çok beğendiği için olduğu gibi teslim eder.", "sag": "teslim etmeden önce baştan okuyup nasıl olduğuna bakar.", "kaliciSol": false}, {"no": 23, "id": "B27", "olcek": "T2", "durum": "Bir hafta sonra okulda bir şiir okuyacaksın; toplam yarım saat çalışacaksın.", "sol": "şiir bölünmesin diye yarım saati tek seferde çalışır.", "sag": "şiire üç ayrı gün onar dakika çalışır.", "kaliciSol": false}, {"no": 24, "id": "B46", "olcek": "T4", "durum": "Fen kitabında bir deneyin nasıl yapıldığı adım adım anlatılıyor.", "sol": "hiçbir adım kaçmasın diye adımları aynen defterine yazar.", "sag": "her adımın neden yapıldığını kendi cümlesiyle not alır.", "kaliciSol": false}, {"no": 25, "id": "P4", "olcek": "P", "durum": "Bu akşam üç dersten ödevin var.", "sol": "sıra seçmekle oyalanmadan ilk bulduğu ödevle başlar.", "sag": "önce hangi ödevi hangi sırayla yapacağına karar verir.", "kaliciSol": false}, {"no": 26, "id": "B16", "olcek": "T1", "durum": "Fen dersindeki tanımları bir kez okudun; beş dakikan daha var.", "sol": "tanımları defterden birkaç kez dikkatle okur.", "sag": "defteri kapatıp tanımları hatırlamaya çalışır.", "kaliciSol": false}, {"no": 27, "id": "M5", "olcek": "M", "durum": "Beden eğitiminde yeni bir hareketi deniyorsun.", "sol": "her denemede yanlış giden yeri fark edip düzeltir.", "sag": "vücudu alışsın diye hareketi değiştirmeden birkaç kez tekrar eder.", "kaliciSol": true}, {"no": 28, "id": "B45", "olcek": "T4", "durum": "Fen kitabında \"Kaktüslerin yaprakları diken şeklindedir.\" bilgisini okuyorsun.", "sol": "\"Neden diken şeklinde?\" diye sorup cevabını düşünür.", "sag": "aklında kalsın diye cümlenin altını çizer.", "kaliciSol": true}], "metin": {"giris": {"baslik": "Öğrenme Alışkanlığı Testi", "alt": "BAK · KAYA — 7 dakikada nasıl çalıştığını keşfet.", "madde1": "<strong>28 kısa durum</strong> göreceksin; yaklaşık 7 dakika sürer.", "madde2": "Her durumda iki öğrenci var. <strong>Doğru ya da yanlış cevap yok;</strong> iki yol da öğrencilerin gerçekten yaptığı şeyler.", "madde3": "Sana hangisi daha çok benziyorsa onun altından <strong>\"Hep böyle\"</strong> ya da <strong>\"Çoğu zaman böyle\"</strong> seç. İkisini de yapıyorsan, daha sık yaptığın tarafta \"Çoğu zaman böyle\"yi seç.", "ornek": "<strong>Örnek:</strong> Bazı öğrenciler kahvaltıda çay içer, <em>ama</em> bazı öğrenciler süt içer. Hep süt içiyorsan süt tarafında <strong>\"Hep böyle\"</strong>yi seçersin. Bazen çay da içiyor ama çoğu zaman süt içiyorsan süt tarafında <strong>\"Çoğu zaman böyle\"</strong>yi seçersin.", "eyebrow": "HER ÇALIŞMA, YENİ BİR ADIM", "h1": "Nasıl öğrendiğini keşfet.", "h1_em": "Bir anahtar dene.", "lead": "Ders çalışırken neler yapıyorsun? Yanıtlarından sana özel bir öğrenme rehberi hazırlayalım. Sonra bu hafta denemek isteyeceğin bir anahtar seç.", "guven": "Burada doğru ya da yanlış cevap yok. İki yol da öğrencilerin gerçekten yaptığı şeyler; sana hangisi daha çok benziyorsa onu seç.", "adimlar": ["Alışkanlıklarını keşfet", "Rehberini oku", "Bir anahtar dene"], "veli_bilgi": "28 kısa durumdan oluşan, yaklaşık 7 dakikalık bir farkındalık etkinliği. BAK öğrenmenin üç anını (başlarken, arada, kapanışta), KAYA kalıcı öğrenmenin dört anahtarını (karıştır, aklından söyle, yay, anlat) gösterir. Tanı koymaz, not vermez, kimseyle karşılaştırmaz. Yanıtlar yalnız bu cihazda kalır ve 14 gün sonra silinir.", "onay": "Velimle birlikte kısa bilgiyi okudum. Teste katılmak istiyorum.", "gizlilik": "Bu bir pazarlama izni değildir. Ad ve yanıtların bu uygulama tarafından sunucuya gönderilmez; yalnız bu cihazda tutulur ve 14 gün sonra silinir.", "baslat": "Öğrenme keşfine başlayalım"}, "mola": "Yarıyı geçtin, çok iyi gidiyorsun! Kalan 14 durumda da ilk aklına geleni seçmen yeter.", "bitis": "Tamamladın! Sonuçların hazır.", "sonuc_ust": "Bu sonuç bugünkü cevaplarına göre çekilmiş bir fotoğraf. Not ya da karne değil; alışkanlıkların değiştikçe sonuç da değişir.", "anlar_giris": "BAK, öğrenmenin üç anıdır: Başlarken plan yaparsın, Arada kontrol edersin, Kapanışta ders çıkarırsın. Cevaplarında hangisi daha önde?", "tuzaklar_giris": "KAYA, bilgiyi kaya gibi kalıcı yapan dört anahtardır. Beynimiz bazen o an kolay gelen yolu seçer; bunu herkes yapar. Dört anahtarda bugünkü durumun:", "anlar": {"P": {"ad": "Başlarken", "alt": "plan yap", "guc": "Bir ödeve ya da işe girişmeden önce ne istendiğine bakıyor, ne yapacağını kafanda sıralıyorsun.", "dene": "Bu hafta bir ödeve başlamadan önce 10 saniye dur ve içinden sor: \"İlk neyi yapacağım?\"", "harf": "B", "orta": "Bazen başlamadan ne istendiğine bakıyorsun; bazen de hemen işe girişiyorsun.", "gelisme": "Şu an çoğu zaman hemen işe girişiyorsun. Başlamadan kısa bir durak işini kolaylaştırabilir."}, "M": {"ad": "Arada", "alt": "kontrol et", "guc": "Çalışırken arada durup \"Doğru mu gidiyorum?\" diye bakıyor, takılınca yolunu değiştirebiliyorsun.", "dene": "Bu hafta okuduğun ya da çözdüğün bir şeyin tam ortasında kalemi bir kez bırak ve sor: \"Buraya kadar ne anladım?\"", "harf": "A", "orta": "Bazen çalışırken durup kontrol ediyorsun; bazen de sonuna kadar aynı yoldan gidiyorsun.", "gelisme": "Şu an çoğu zaman başladığın yoldan sonuna kadar gidiyorsun. Ara ara durup bakmak hataları erken yakalar."}, "E": {"ad": "Kapanışta", "alt": "ders çıkar", "guc": "Bir işi bitirince hemen kapatıp gitmiyor, nerede zorlandığına ve neyin işe yaradığına bakıyorsun.", "dene": "Bu hafta bir ödev bitince kalkmadan 15 saniye düşün: \"Bugün hangi çalışma yolu en çok işime yaradı? Bir dahakine neyi farklı yaparım?\"", "harf": "K", "orta": "Bazen bitirince geriye bakıyorsun; bazen de hemen sıradaki işe geçiyorsun.", "gelisme": "Şu an çoğu zaman bitirince hemen sıradaki işe geçiyorsun. Kısa bir geri bakış bir dahakini kolaylaştırır."}}, "etiketler": {"guclu": "En güçlü", "orta": "Gelişiyor", "dene": "Gelişmeye açık", "esit": "Birbirine yakın", "esit_yuksek": "Üçü de güçlü"}, "dengeli": {"yuksek": {"baslik": "Üç anı da güçlü kullanıyorsun", "metin": "Başlarken plan yapmayı, Arada kontrol etmeyi ve Kapanışta ders çıkarmayı bir arada kullanıyorsun. Zor bir derste bu üçünden hangisinin en çok işine yaradığına dikkat et."}, "orta": {"baslik": "Üç an birbirine yakın", "metin": "Başlarken, Arada ve Kapanışta; üç ana da benzer ölçüde yer veriyorsun. Bu hafta ödevlerinde birini biraz daha öne çıkarıp farkı görebilirsin."}, "dusuk": {"baslik": "Üç an birbirine yakın", "metin": "Üç ana da benzer ölçüde yer veriyorsun; şu an ödeve duraksamadan hemen başlamayı seçiyorsun. Başlamadan önce kısa bir durak eklemek işini kolaylaştırabilir.", "dene_olcek": "P"}}, "tuzaklar": {"T1": {"ad": "Aklından söyle", "ozet": "Kitabı kapat, aklında kalanı söyle", "kolay": "Sayfayı tekrar okuyunca gözüne tanıdık gelir ve bildiğini hissedersin; ama tanıdık gelmek tek başına hatırlamak demek değildir. Bu hafta okuduğun bir sayfanın sonunda kitabı kapat ve aklında kalan iki cümleyi kendine anlat.", "arada": "Bazen kitabı kapatıp hatırlamaya çalışıyorsun; bu çok işe yarayan bir alışkanlık. Bu hafta bir konuyu okuduktan sonra kitabı kapatıp aklında kalanları sesli söylemeyi bir kez daha dene.", "kalici": "Okuduktan sonra kitabı kapatıp aklından hatırlamaya çalışıyorsun. Bilginin uzun süre akılda kalmasının en sağlam yollarından biri bu.", "harf": "A", "kolay_yol": "Kolay gelen yol: aynı sayfayı tekrar tekrar okumak", "deneme": {"ad": "Kapat ve anlat", "sure": "10 dakika", "malzeme": "Bir ders kitabı ya da defterin.", "adimlar": ["Bir sayfayı bir kez dikkatle oku.", "Kitabı kapat; aklında kalanları sesli söyle ya da üç madde yaz.", "Kitabı aç, eksik kalanı bul ve işaretle."], "ileri": "Ertesi gün aynı sayfayı bakmadan bir kez daha anlat.", "kolay": "Yalnız tek bir paragrafla dene."}}, "T2": {"ad": "Yay", "ozet": "Çalışmayı günlere yay", "kolay": "Çalışmayı tek oturuşa ya da son geceye sığdırmak o an içini rahatlatır ama bilgi birkaç günde uçup gider. Bu hafta kısa bir konuyu tek seferde yarım saat yerine iki ayrı gün on beşer dakika çalış.", "arada": "Zaman zaman çalışmanı günlere yayıyorsun. Bu hafta bir konuyu aynı gün bitirmek yerine ertesi güne de on dakikalık küçük bir parça bırak.", "kalici": "Çalışmanı tek güne yığmak yerine günlere bölüyorsun. Böyle aralıklı çalışmak bilginin uzun süre akılda kalmasına yardım eder.", "harf": "Y", "kolay_yol": "Kolay gelen yol: hepsini tek oturuşta çalışmak", "deneme": {"ad": "Üç günlük takvim", "sure": "Her gün 10 dakika", "malzeme": "Takvim ya da ajanda, renkli kalem.", "adimlar": ["Bu hafta öğrenmen gereken bir konu seç.", "Takvimde üç ayrı güne 10'ar dakikalık kısa çalışma işaretle.", "Her gün önce bir önceki günü hatırlamaya çalış, sonra devam et."], "ileri": "Bir hafta sonra aynı konuya 5 dakikalık bir tekrar ekle.", "kolay": "İki ayrı gün yeter."}}, "T3": {"ad": "Karıştır", "ozet": "Farklı soru türlerini karışık çöz", "kolay": "Aynı tür soruları art arda çözmek hızlı akar; ama sınavda sorular karışık gelince hangi yolu seçeceğini bulmak zorlaşır. Bu hafta alıştırmanın son üç dört sorusunu farklı konulardan karışık seç.", "arada": "Arada bir karışık sorularla kendini deniyorsun. Bu hafta bir konuyu öğrendikten sonra farklı türlerden üç beş karışık soru çöz.", "kalici": "Farklı tür soruları karıştırarak çözmeyi seçiyorsun. Böylece hangi soruda hangi yolu kullanacağını ayırt etmeyi de öğreniyorsun.", "harf": "K", "kolay_yol": "Kolay gelen yol: aynı tür soruları art arda çözmek", "deneme": {"ad": "Karışık beşli", "sure": "15 dakika", "malzeme": "Ders kitabın ya da test kitabın, kâğıt ve kalem.", "adimlar": ["Son iki haftada işlediğin iki üç konudan beş soru seç.", "Soruları karıştırıp sırayla çöz; her soruda önce \"Bu hangi tür?\" diye kendine sor.", "Türünü bulmakta zorlandığın soruyu işaretle."], "ileri": "Bir arkadaşınla birbirinize karışık soru hazırlayın.", "kolay": "Yalnız iki tür sorudan ikişer tane karıştır."}}, "T4": {"ad": "Anlat", "ozet": "Kendi cümlenle anlat, \"neden?\" diye sor", "kolay": "Altını renkli çizmek ya da aynen deftere geçirmek notları düzenli gösterir; ama kendi cümlenle yazmadıkça bilgi akılda kalmakta zorlanır. Bu hafta bir paragraf okuyunca kenarına kendi cümlenle tek bir \"Neden böyle?\" notu yaz.", "arada": "Zaman zaman okuduklarını kendi cümlenle yazıp \"neden?\" diye soruyorsun. Bu hafta önemli bir yerin altını çizdikten sonra \"Bunu arkadaşıma tek cümleyle nasıl anlatırdım?\" diye kendi cümleni ekle.", "kalici": "Bilgiyi kopyalamak yerine kendi cümlenle yazıyor ve nedenini soruyorsun. Bilgiyi kalıcı yapmanın en güzel yollarından biri bu.", "harf": "A", "kolay_yol": "Kolay gelen yol: aynen yazmak, altını çizmek", "deneme": {"ad": "Neden kutusu", "sure": "15 dakika", "malzeme": "Defterin ve bir kalem.", "adimlar": ["Okuduğun bir konudan önemli bir cümle seç.", "Yanına kendi cümlenle \"Bu neden böyle?\" sorusunun cevabını yaz.", "Bir aile üyene ya da arkadaşına iki dakikada anlat."], "ileri": "Anlatırken bir örnek ya da küçük bir çizim ekle.", "kolay": "Tek bir \"neden?\" sorusuyla başla."}}}, "durumlar": {"kolay": "Kolay zeminde", "arada": "Sağlamlaşıyor", "kalici": "Kaya gibi"}, "paylasim": {"dengeli": "BAK'ta üç anım birbirine yakın.", "dengeli_yuksek": "BAK'ta üç anımı da güçlü kullanıyorum.", "P": "Öğrenirken en güçlü anım: Başlarken plan yapmak.", "M": "Öğrenirken en güçlü anım: Arada kontrol etmek.", "E": "Öğrenirken en güçlü anım: Kapanışta ders çıkarmak.", "PM": "En güçlü anlarım: Başlarken plan yapmak ve Arada kontrol etmek.", "PE": "En güçlü anlarım: Başlarken plan yapmak ve Kapanışta ders çıkarmak.", "ME": "En güçlü anlarım: Arada kontrol etmek ve Kapanışta ders çıkarmak."}, "veli_notu": "Bu sonuç çocuğunuzun kalıcı bir özelliği ya da başarısı değil; bugünkü çalışma alışkanlıklarının bir fotoğrafıdır. BAK, öğrenmenin üç anını gösterir: Başlarken plan yapmak, Arada kontrol etmek, Kapanışta ders çıkarmak. KAYA ise kalıcı öğrenmenin dört anahtarıdır: Karıştır, Aklından söyle, Yay, Anlat. Konuşurken \"Neden son geceye bırakıyorsun?\" gibi yargılayan cümlelerden kaçının. Bunun yerine \"Sonuçta seni şaşırtan bir şey oldu mu?\" ya da \"Bu hafta hangi küçük adımı birlikte deneyelim?\" diye merakla sorun. Tek bir küçük adımı rahatça ve kendi hızında denemesine alan açmanız yeterlidir.", "ogretmen_notu": "Bu sonuç bir not, düzey belirleme ya da tanı değil; öğrencinin bugünkü çalışma alışkanlıklarına tutulan kısa bir aynadır. Öğrencileri gruplamak ya da karşılaştırmak yerine BAK ve KAYA'yı sınıfın ortak dili olarak kullanabilirsiniz: \"Başlarken ne yapıyoruz?\", \"Bugün hangi KAYA anahtarını deneyelim?\" Derste beş dakikalık \"kitabı kapat, aklından söyle\" ya da \"karışık iki soru çöz\" uygulamaları anahtarları doğal biçimde gösterir.", "dayanak": ["BAK (öğrenme anları): Zimmerman (2002), öz düzenlemeli öğrenme döngüsü; Schraw ve Dennison (1994), planlama–izleme–değerlendirme.", "K — Karıştır: Rohrer ve ark. (2020); Brunmair ve Richter (2019).", "A — Aklından söyle: Roediger ve Karpicke (2006); Agarwal ve ark. (2021).", "Y — Yay: Cepeda ve ark. (2006); Dunlosky ve ark. (2013).", "A — Anlat: Dunlosky ve ark. (2013); Bisra ve ark. (2018); Wood ve ark. (1990, 1993).", "Soru biçimi: Harter (1982), çocuklar için yapılandırılmış seçenek biçimi."], "sinir": "Bu bir tanı ya da not aracı değildir ve öğrencileri birbiriyle karşılaştırmaz. Sorular öğrenme psikolojisi araştırmalarına dayanır ve uzman incelemesinden geçmiştir; geniş bir öğrenci grubuyla geçerlik çalışması henüz yapılmamıştır.", "veli": [{"olcek": "P", "duzenleyen": "Bir işe başlamadan ne istendiğine bakar, plan yapar.", "kolay": "Bir işe vakit kaybetmeden hemen girişir."}, {"olcek": "M", "duzenleyen": "İş sürerken doğru gidip gitmediğini kontrol eder.", "kolay": "Başladığı yoldan durmadan sonuna kadar gider."}, {"olcek": "E", "duzenleyen": "İş bitince nasıl geçtiğine, neyin işe yaradığına bakar.", "kolay": "İş bitince hemen sıradaki işe geçer."}, {"olcek": "T1", "duzenleyen": "Ders çalışırken kitabı kapatıp hatırlamaya çalışır.", "kolay": "Ders çalışırken konuyu birkaç kez tekrar okur."}, {"olcek": "T2", "duzenleyen": "Çalışmasını birkaç güne böler.", "kolay": "Çalışmasını tek oturuşta, genelde sınavdan önceki gün yapar."}, {"olcek": "T3", "duzenleyen": "Farklı tür soruları karışık çözer.", "kolay": "Aynı tür soruları art arda çözer."}, {"olcek": "T4", "duzenleyen": "Kendi cümlesiyle yazar, \"Bu neden böyle?\" diye sorar.", "kolay": "Önemli yerleri aynen yazar ya da altını çizer."}], "dusuk_baslik": "Cevaplarında biraz öne çıkan an: {ad}", "dusuk_guc": "Cevaplarında üç an da daha çok \"hemen başla\" tarafında; aralarında {ad} biraz öne çıkıyor.", "kaya_sira": ["T3", "T1", "T2", "T4"], "marka": {"aile": "Yörünge", "kurum": "TACEV", "urun": "Öğrenme Alışkanlığı Testi", "kod": "BAK · KAYA", "alt": "TACEV · Öğrenme Alışkanlığı Testi", "slogan": "Nasıl çalıştığını fark et. Bir anahtar dene.", "tacev_url": "https://tacevteknoloji.com/iletisim", "ilgi_url": "https://raufenc.com/ilgitesti/"}, "alistirma": {"eyebrow": "ÖNCE KÜÇÜK BİR ALIŞTIRMA", "baslik": "Burada önemli olan sana hangisinin benzediği.", "metin": "Her durumda iki öğrenci var. Sana hangisi daha çok benziyorsa onun altındakini seç. İkisini de yapıyorsan, daha sık yaptığın tarafta \"Çoğu zaman böyle\"yi seç.", "durum": "Kahvaltı zamanı.", "sol": "kahvaltıda çay içer.", "sag": "kahvaltıda süt içer.", "not": "Bu örnek puanlanmaz.", "hazir": "Hazırım, sorulara geçelim"}, "rapor": {"eyebrow": "SANA ÖZEL ÖĞRENME REHBERİ", "ornek_eyebrow": "ÖRNEK ÖĞRENME REHBERİ", "basliklar": {"P": "başlarkenki planın güçlü.", "M": "aradaki kontrolün güçlü.", "E": "kapanıştaki bakışın güçlü.", "PM": "başlarken ve arada güçlüsün.", "PE": "başlarken ve kapanışta güçlüsün.", "ME": "arada ve kapanışta güçlüsün.", "dengeli": "üç anın birbirine yakın.", "dengeli_yuksek": "üç anını da güçlü kullanıyorsun."}, "not": "Bugünkü çalışma alışkanlıklarından, deneyebileceğin anahtarlara. Not, tanı ya da başarı ölçümü içermez.", "sekmeler": ["Sana notlar", "KAYA denemeleri", "Öğrenme haritam", "Ailene notlar"], "ilk_adim": "İlk adımın küçük olabilir.", "ilk_adim_metin": "Bir anahtar seç, bu hafta bir kez dene ve en çok neyin işine yaradığına bak. Sonraki adımını bu denemeden yola çıkarak seçebilirsin.", "denemelere_git": "Bana önerilen denemeleri göreyim", "kaya_baslik": "Bu hafta küçük denemeler", "kaya_alt": "Her anahtar için küçük bir deneme var. İlkini sen seç; hepsini yapmak zorunda değilsin.", "harita_baslik": "BAK ve KAYA haritan", "harita_alt": "Grafik, her bölümdeki dört yanıtının özetini gösterir (0–12). Not değildir; bugünkü yanıtlarınla sınırlıdır.", "aksiyon_baslik": "Rehberin sana özel.", "aksiyon_alt": "Anahtar denemelerin, ailene notlar ve 14 günlük plan üç sayfalık PDF'de.", "pdf_ad": "PDF'de adım / takma adım yer alsın", "pdf": "Kişisel PDF'mi indir", "tacev": "TACEV'de bir adım daha", "kart": "Paylaşım kartını indir", "kaynak": "Kaynaklar ve yöntem", "ornek_bant": "Kurmaca örnek · Kendi yanıtların değişmedi.", "ornek_don": "Kendi testime dön"}, "aile": {"eyebrow": "AİLENE NOTLAR", "baslik": "{ad} için birlikte bir başlangıç", "ipuclari": [{"b": "Önce aklında kalanı sorun.", "m": "\"Bugün ne çalıştın?\" yerine \"Kitabı kapatınca aklında ne kaldı?\" diye sorun. Hatırlamaya çalışmak, tekrar okumaktan daha kalıcıdır."}, {"b": "Takvimi birlikte kurun.", "m": "Büyük bir oturum yerine haftaya yayılmış kısa çalışmaları birlikte işaretleyin. Kısa ama ayrı günler daha kalıcıdır."}, {"b": "Yargı değil, merak.", "m": "\"Neden son geceye bıraktın?\" yerine \"Bu sefer hangi anahtarı denemek istersin?\" diye sorun. Seçimi çocuğa bırakın."}], "plan": [{"g": "1. GÜN", "b": "Anahtarı seç", "m": "Rehberdeki denemelerden birini seçsin; ne zaman deneyeceğini birlikte belirleyin."}, {"g": "2-4. GÜN", "b": "İlk deneme", "m": "Seçtiği denemeyi bir kez yapsın; neyin kolay, neyin zor geldiğini konuşun."}, {"g": "5-8. GÜN", "b": "Bir şeyi değiştir", "m": "Denemede tek bir ayrıntıyı değiştirip yeniden yapsın; iki denemeyi karşılaştırsın."}, {"g": "9-14. GÜN", "b": "Alışkanlığa çevir", "m": "İşe yarayan denemeyi bir derse taşısın; sonraki anahtarı kendisi seçsin."}], "tacev_baslik": "TACEV ile tanışın", "tacev": [{"m": "Robotik ve kodlamayla tanışmak için TACEV atölyelerini keşfedin. Sınıfına uygun grubu, takvimi ve katılım koşullarını birlikte sorun.", "b": "ROBOTİK / BİLGİ ALIN"}, {"m": "İngilizce öğrenme ve konuşma pratiği için TACEV Super English ile tanışın. Yaşına ve dil düzeyine uygun güncel seçenekleri birlikte sorun.", "b": "SUPER ENGLISH / BİLGİ ALIN"}], "tacev_not": "TACEV seçenekleri isteğe bağlıdır; güncel katılım bilgilerini kurumdan öğrenebilirsiniz."}}, "surum": "1.0-deneme", "gonder": {"form_url": "", "alan": ""}};
 "use strict";
 const Q = VERI.sorular, M = VERI.metin, ANAHTAR = "yorunge-ogrenme-v2", OMUR = 14*24*3600*1000;
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const prm = new URLSearchParams(location.search);
-const BUTON = ["solTam","solBiraz","sagBiraz","sagTam"], SINIF = ["","4","5","6","7","8","9"];
-const BOS = () => ({v:2, ad:"", sinif:"", cevap:{}, sure:{}, sira:0, bitti:false, basladi:null, bitis:null, molaGoruldu:false, veli:null, onay:false, gonderildi:false, pilot:false, zaman:0});
-let D = BOS(), kayitTamam = true;
-let PILOT = prm.has("pilot");
+const BUTON = ["solTam","solBiraz","sagBiraz","sagTam"], SINIF = ["4","5","6","7","8","9"];
+const AVATAR_AD = ["Kestane","Dalgalı","Sarı saçlı","Gözlüklü","Başörtülü","Siyah saçlı","Kıvırcık","Sarı saçlı","Kızıl saçlı","Gözlüklü"];
+const BOS = () => ({v:2, ad:"", sinif:"5", avatar:null, cevap:{}, sure:{}, sira:0, bitti:false, basladi:null, bitis:null, molaGoruldu:false, veli:null, onay:false, gonderildi:false, pilot:false, zaman:0});
+let D = BOS(), kayitTamam = true, ORNEK = false, gercekD = null;
+const PILOT = prm.has("pilot");
+const ANLAR = ["P","M","E"], KAYA = M.kaya_sira, RENK = {P:"var(--b)",M:"var(--a)",E:"var(--k)",T3:"var(--kk)",T1:"var(--ka)",T2:"var(--ky)",T4:"var(--kn)"};
+const RENK_HEX = {P:"#087c76",M:"#3d62a8",E:"#7a4f9e",T3:"#a8551b",T1:"#3d62a8",T2:"#4f7228",T4:"#9b3f6f"};
 
-function kaydet(){ D.zaman = Date.now(); try{ localStorage.setItem(ANAHTAR, JSON.stringify(D)); kayitTamam = true; }catch(e){ kayitTamam = false; } const u = document.getElementById("kayit-uyari"); if(u) u.classList.toggle("gizli", kayitTamam); }
+function kaydet(){ if(ORNEK) return; D.zaman = Date.now(); try{ localStorage.setItem(ANAHTAR, JSON.stringify(D)); kayitTamam = true; }catch(e){ kayitTamam = false; } const u = $("kayit-uyari"); if(u) u.classList.toggle("gizli", kayitTamam); }
 function sil(){ try{ localStorage.removeItem(ANAHTAR); }catch(e){} }
 function gecerli(x){
   if(!x || typeof x !== "object" || x.v !== 2) return null;
   if(typeof x.zaman !== "number" || !isFinite(x.zaman) || x.zaman > Date.now() + 60000 || Date.now() - x.zaman > OMUR) return null;
   const d = BOS();
   d.ad = typeof x.ad === "string" ? x.ad.slice(0,24) : "";
-  d.sinif = SINIF.includes(x.sinif) ? x.sinif : "";
+  d.sinif = SINIF.includes(x.sinif) ? x.sinif : "5";
+  d.avatar = Number.isInteger(x.avatar) && x.avatar >= 0 && x.avatar < 10 ? x.avatar : null;
   for(const q of Q){
     if(BUTON.includes(x.cevap?.[q.no])) d.cevap[q.no] = x.cevap[q.no];
     const s = x.sure?.[q.no]; if(typeof s === "number" && s >= 0 && s < 3600) d.sure[q.no] = s;
@@ -261,30 +427,68 @@ function gecerli(x){
 function yukle(){ try{ const s = localStorage.getItem(ANAHTAR); if(s){ const d = gecerli(JSON.parse(s)); if(d) return d; sil(); } }catch(e){} return null; }
 function duyur(t){ $("duyuru").textContent = ""; setTimeout(() => $("duyuru").textContent = t, 30); }
 function ekran(id, odak){
-  for(const s of ["giris","veli","soru","mola","bitis","sonuc"]) $(s).classList.toggle("gizli", s !== id);
+  for(const s of ["giris","veli","alistirma","soru","mola","bitis","sonuc"]) $(s).classList.toggle("gizli", s !== id);
   window.scrollTo(0,0);
-  const h = odak ? $(odak) : $(id).querySelector("h1,h2"); if(h) h.focus({preventScroll:true});
+  const h = odak ? $(odak) : $(id).querySelector("h1"); if(h) h.focus({preventScroll:true});
 }
+function avatarYaz(el, i){
+  if(i === null || i === undefined){ el.classList.add("gizli"); return; }
+  el.classList.remove("gizli");
+  el.style.backgroundPosition = `${(i%5)*25}% ${Math.floor(i/5)*100}%`;
+  el.setAttribute("role","img"); el.setAttribute("aria-label", "Seçilen avatar: " + AVATAR_AD[i]);
+}
+const buyukTR = s => s ? s[0].toLocaleUpperCase("tr") + s.slice(1) : s;
 
-/* ---- metinleri yerleştir ---- */
-$("g-baslik").textContent = M.giris.baslik; $("g-alt").textContent = M.giris.alt;
-$("g-m1").innerHTML = M.giris.madde1; $("g-m2").innerHTML = M.giris.madde2; $("g-m3").innerHTML = M.giris.madde3;
-$("g-ornek").innerHTML = M.giris.ornek; $("mola-metin").textContent = M.mola; $("bitis-baslik").textContent = M.bitis;
-$("s-ust").textContent = M.sonuc_ust; $("s-anlar-giris").textContent = M.anlar_giris; $("s-tuzak-giris").textContent = M.tuzaklar_giris;
+$("marka-alt").textContent = M.marka.alt; $("f-slogan").textContent = M.marka.slogan; $("f-ilgi").href = M.marka.ilgi_url;
+$("g-eyebrow").textContent = M.giris.eyebrow;
+$("g-h1").innerHTML = `${esc(M.giris.h1)} <em>${esc(M.giris.h1_em)}</em>`;
+$("g-lead").textContent = M.giris.lead; $("g-guven").textContent = M.giris.guven;
+$("g-adimlar").innerHTML = M.giris.adimlar.map((a,i) => `<div><span>0${i+1}</span>${esc(a)}</div>`).join("");
+$("g-veli-bilgi").textContent = M.giris.veli_bilgi; $("g-onay").textContent = M.giris.onay;
+$("g-gizlilik").textContent = M.giris.gizlilik; $("g-baslat").textContent = M.giris.baslat;
+$("mola-metin").textContent = M.mola; $("bitis-h1").textContent = M.bitis;
+$("al-eyebrow").textContent = M.alistirma.eyebrow; $("al-h1").textContent = M.alistirma.baslik; $("al-metin").textContent = M.alistirma.metin;
+$("al-not").textContent = M.alistirma.not; $("al-durum").textContent = M.alistirma.durum; $("al-hazir").textContent = M.alistirma.hazir;
+const R = M.rapor;
+$("r-not").textContent = R.not;
+$("sekmeler").innerHTML = R.sekmeler.map((s,i) => `<button type="button" role="tab" id="t${i}" aria-controls="p${i}" aria-selected="${i===0}" tabindex="${i===0?0:-1}">${esc(s)}</button>`).join("");
+$("ilk-adim").textContent = R.ilk_adim; $("ilk-adim-metin").textContent = R.ilk_adim_metin; $("denemelere-git").textContent = R.denemelere_git + " →";
+$("p1-h2").textContent = R.kaya_baslik; $("p1-alt").textContent = R.kaya_alt;
+$("p2-h2").textContent = R.harita_baslik; $("p2-alt").textContent = R.harita_alt;
+$("ak-baslik").textContent = R.aksiyon_baslik; $("ak-alt").textContent = R.aksiyon_alt; $("ak-pdf-ad").textContent = R.pdf_ad; $("ak-pdf").textContent = R.pdf;
+$("ak-tacev").textContent = R.tacev + " →"; $("ak-tacev").href = M.marka.tacev_url;
+$("kart-yap").textContent = R.kart; $("kaynak-ac").textContent = R.kaynak;
 $("veli-notu").textContent = M.veli_notu; $("ogretmen-notu").textContent = M.ogretmen_notu; $("sinir").textContent = M.sinir;
 $("dayanak").innerHTML = M.dayanak.map(x => `<li>${esc(x)}</li>`).join("");
+$("aile-ipuclari").innerHTML = M.aile.ipuclari.map(x => `<div class="ipucu"><b>${esc(x.b)}</b><p>${esc(x.m)}</p></div>`).join("");
+$("aile-plan").innerHTML = M.aile.plan.map(x => `<div><small>${esc(x.g)}</small><b>${esc(x.b)}</b><p>${esc(x.m)}</p></div>`).join("");
+$("tacev-baslik").textContent = M.aile.tacev_baslik; $("tacev-not").textContent = M.aile.tacev_not;
+$("tacev").innerHTML = M.aile.tacev.map(x => `<div><p>${esc(x.m)}</p><a class="birincil" href="${esc(M.marka.tacev_url)}" target="_blank" rel="noopener" style="font-size:14px;min-height:46px">${esc(x.b)}</a></div>`).join("");
+$("p3-eyebrow").textContent = M.aile.eyebrow;
 
-/* ---- giriş ---- */
+$("avatarlar").innerHTML = AVATAR_AD.map((a,i) => `<button type="button" data-i="${i}" aria-pressed="false"><span class="avatar" style="background-position:${(i%5)*25}% ${Math.floor(i/5)*100}%"></span><small>${a}</small></button>`).join("");
+let secilenAvatar = null;
+function avatarOnizle(){
+  document.querySelectorAll("#avatarlar button").forEach(b => b.setAttribute("aria-pressed", String(+b.dataset.i === secilenAvatar)));
+  $("avatar-onizleme").innerHTML = secilenAvatar === null
+    ? `<svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#087c76" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m16.2 7.8-2.1 6.3-6.3 2.1 2.1-6.3z"/></svg><div><b>Seçim senin.</b><small>Bir karakter seçebilir veya avatarsız devam edebilirsin.</small></div>`
+    : `<span class="avatar" style="background-position:${(secilenAvatar%5)*25}% ${Math.floor(secilenAvatar/5)*100}%"></span><div><b>Harika seçim!</b><small>${AVATAR_AD[secilenAvatar]} keşif boyunca seninle olacak.</small></div>`;
+}
+$("avatarlar").addEventListener("click", e => { const b = e.target.closest("button"); if(!b) return; secilenAvatar = +b.dataset.i; avatarOnizle(); });
+$("avatarsiz").onclick = () => { secilenAvatar = null; avatarOnizle(); };
+$("onay").addEventListener("change", () => $("basla").disabled = !$("onay").checked);
+
 function gonderAcik(){ return PILOT && VERI.gonder && VERI.gonder.form_url && VERI.gonder.alan; }
 function girisGoster(){
+  ornekKapat(false);
   const kayit = yukle();
-  $("ad").value = ""; $("sinif").value = ""; $("onay").checked = false;
-  $("onay-kutu").classList.toggle("gizli", !gonderAcik());
+  $("ad").value = ""; $("sinif").value = "5"; $("onay").checked = false; $("basla").disabled = true; $("gonder-onay").checked = false;
+  secilenAvatar = null; avatarOnizle();
+  $("gonder-kutu").classList.toggle("gizli", !gonderAcik());
   $("veli-giris").classList.toggle("gizli", !PILOT);
   $("veli-durum").textContent = D.veli ? "✓ Veli tahmini kaydedildi." : "";
   $("veli-ac").textContent = D.veli ? "Veli tahminini değiştir" : "Veliyseniz: önce tahmininizi girin (1 dakika)";
-  const yarim = kayit && !kayit.bitti && kayit.basladi;
-  const bitmis = kayit && kayit.bitti;
+  const yarim = kayit && !kayit.bitti && kayit.basladi, bitmis = kayit && kayit.bitti;
   $("devam-kutu").classList.toggle("gizli", !(yarim || bitmis));
   $("giris-form").classList.toggle("gizli", !!(yarim || bitmis));
   if(yarim){ $("devam-metin").textContent = `Bu cihazda yarım kalmış bir test var (${kayit.sira} / ${Q.length}).`; $("devam-et").textContent = "Kaldığın yerden devam et"; }
@@ -295,24 +499,37 @@ function girisGoster(){
 $("yeni-test").onclick = () => { const veli = D.veli; sil(); D = BOS(); D.veli = PILOT ? veli : null; if(D.veli) kaydet(); girisGoster(); };
 function devamEt(){
   if(D.bitti) return sonucGoster();
-  if(D.sira >= Q.length) return ekran("bitis");
-  if(D.sira === 14 && !D.molaGoruldu) return ekran("mola");
+  if(D.sira >= Q.length) return araEkran("bitis");
+  if(D.sira === 14 && !D.molaGoruldu) return araEkran("mola");
   ekran("soru", "durum"); soruGoster();
 }
 $("basla").onclick = () => {
+  if(!$("onay").checked) return;
   const veli = D.veli;
   D = BOS(); D.veli = veli; D.pilot = PILOT;
-  D.ad = $("ad").value.trim().slice(0,24); D.sinif = SINIF.includes($("sinif").value) ? $("sinif").value : "";
-  D.onay = gonderAcik() ? $("onay").checked : false; D.basladi = new Date().toISOString();
-  kaydet(); ekran("soru", "durum"); soruGoster();
+  D.ad = $("ad").value.trim().slice(0,24); D.sinif = SINIF.includes($("sinif").value) ? $("sinif").value : "5"; D.avatar = secilenAvatar;
+  D.onay = gonderAcik() ? $("gonder-onay").checked : false; D.basladi = new Date().toISOString();
+  kaydet(); alistirmaGoster();
 };
+function alistirmaGoster(){
+  avatarYaz($("al-avatar"), D.avatar);
+  const tar = (kim, m) => `<div class="taraf"><span class="kim">${kim}</span><p>${esc(m)}</p><div class="secimler"><button class="secim" type="button" aria-pressed="false">Hep böyle</button><button class="secim" type="button" aria-pressed="false">Çoğu zaman böyle</button></div></div>`;
+  $("al-taraflar").innerHTML = tar("Bazı öğrenciler", buyukTR(M.alistirma.sol)) + `<div class="ama" aria-hidden="true">AMA</div>` + tar("Bazı öğrenciler ise", buyukTR(M.alistirma.sag));
+  $("al-taraflar").querySelectorAll(".secim").forEach(b => b.onclick = () => {
+    $("al-taraflar").querySelectorAll(".secim").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+    $("al-taraflar").querySelectorAll(".taraf").forEach(t => t.classList.toggle("secili", t.contains(b)));
+  });
+  ekran("alistirma");
+}
+$("al-geri").onclick = girisGoster;
+$("al-hazir").onclick = () => { ekran("soru", "durum"); soruGoster(); };
 
-/* ---- soru ---- */
 let gosterim = 0, kilit = false;
 function soruGoster(){
   const q = Q[D.sira];
+  avatarYaz($("s-avatar"), D.avatar);
   $("durum").textContent = q.durum;
-  $("m-sol").textContent = q.sol; $("m-sag").textContent = q.sag;
+  $("m-sol").textContent = buyukTR(q.sol); $("m-sag").textContent = buyukTR(q.sag);
   $("sayac").textContent = (D.sira+1) + " / " + Q.length;
   $("cubuk").style.width = (100*D.sira/Q.length) + "%";
   $("ilerleme").setAttribute("aria-valuenow", D.sira);
@@ -325,7 +542,7 @@ function soruGoster(){
   $("t-sol").classList.toggle("secili", !!b && b.startsWith("sol"));
   $("t-sag").classList.toggle("secili", !!b && b.startsWith("sag"));
   $("geri").style.visibility = D.sira > 0 ? "visible" : "hidden";
-  duyur(`Soru ${D.sira+1} / ${Q.length}`);
+  duyur(`Durum ${D.sira+1} / ${Q.length}`);
   $("durum").focus({preventScroll:true});
   gosterim = performance.now();
 }
@@ -340,9 +557,10 @@ document.querySelectorAll("#soru .secim").forEach(btn => btn.addEventListener("c
   $("t-sag").classList.toggle("secili", btn.dataset.b.startsWith("sag"));
   setTimeout(() => { kilit = false; ilerle(); }, 280);
 }));
+function araEkran(id){ avatarYaz($(id === "mola" ? "m-avatar" : "b-avatar"), D.avatar); ekran(id); }
 function ilerle(){
-  if(D.sira >= Q.length){ ekran("bitis"); return; }
-  if(D.sira === 14 && !D.molaGoruldu){ ekran("mola"); return; }
+  if(D.sira >= Q.length){ araEkran("bitis"); return; }
+  if(D.sira === 14 && !D.molaGoruldu){ araEkran("mola"); return; }
   soruGoster();
 }
 $("geri").onclick = () => { if(kilit || D.sira === 0) return; D.sira--; kaydet(); soruGoster(); };
@@ -350,16 +568,15 @@ $("devam").onclick = () => { D.molaGoruldu = true; kaydet(); ekran("soru", "duru
 $("son-soru").onclick = () => { D.sira = Q.length - 1; kaydet(); ekran("soru", "durum"); soruGoster(); };
 $("sonuca-git").onclick = () => {
   const eksik = Q.findIndex(q => !D.cevap[q.no]); if(eksik >= 0){ D.sira = eksik; kaydet(); ekran("soru", "durum"); soruGoster(); return; }
-  D.bitti = true; D.bitis = new Date().toISOString(); kaydet(); sonucGoster(); if(D.onay && !D.gonderildi) gonder(); };
+  D.bitti = true; D.bitis = new Date().toISOString(); kaydet(); sonucGoster(); if(D.onay && !D.gonderildi) gonder();
+};
 
-/* ---- puanlama (BANKA-1.0; eşik d=2, sim/olcme4.py) ---- */
 function puan(q, b){ const p = {solTam:3, solBiraz:2, sagBiraz:1, sagTam:0}[b]; return q.kaliciSol ? p : 3 - p; }
 function olcekPuan(){
   const t = {P:0,M:0,E:0,T1:0,T2:0,T3:0,T4:0};
   for(const q of Q){ const b = D.cevap[q.no]; if(b) t[q.olcek] += puan(q,b); }
   return t;
 }
-const ANLAR = ["P","M","E"];
 function anSinif(t, d=2){
   const o = [0,1,2].sort((a,b) => (t[ANLAR[b]]-t[ANLAR[a]]) || (a-b)).map(i => ANLAR[i]);
   const [hi, mid, lo] = o.map(x => t[x]), g1 = hi-mid, g2 = mid-lo;
@@ -372,133 +589,225 @@ function anSinif(t, d=2){
 }
 const adYaz = k => M.anlar[k].ad;
 function sinifYazi(s){ return s.gruplar.map(g => g.map(adYaz).join(" = ")).join(" > "); }
+function harfSira(s){ return s.gruplar.map(g => g.map(k => M.anlar[k].harf).join(" = ")).join(" › "); }
 function tuzakDurum(p){ return p <= 3 ? "kolay" : p <= 8 ? "arada" : "kalici"; }
 
-/* ---- sonuç ---- */
-function sonucGoster(){
-  const t = olcekPuan(), s = anSinif(t), A = M.anlar;
-  $("s-baslik").textContent = D.ad ? `${D.ad}, sonuçların` : "Sonuçların";
-  const son = s.gruplar.length - 1;
-  $("a-anlar").innerHTML = ANLAR.map(k => {
+function ozet(){
+  const t = olcekPuan(), s = anSinif(t), A = M.anlar, son = s.gruplar.length - 1;
+  const yuksek = Math.min(t.P,t.M,t.E) >= 8, dusuk = Math.max(t.P,t.M,t.E) <= 4;
+  const etiket = k => {
     const gi = s.gruplar.findIndex(g => g.includes(k));
-    const sinif = s.tur === "dengeli" ? "" : gi === 0 ? "guclu" : gi === son ? "dene" : "";
-    const yuksek = Math.min(t.P,t.M,t.E) >= 8;
-    const etk = s.tur === "dengeli" ? (yuksek ? M.etiketler.esit_yuksek : M.etiketler.esit) : gi === 0 ? M.etiketler.guclu : gi === son ? M.etiketler.dene : M.etiketler.orta;
-    return `<div class="an ${sinif}"><b><span class="harf" aria-hidden="true">${esc(A[k].harf)}</span> ${esc(A[k].ad)}</b><small>${esc(A[k].alt)}</small><span class="etk">${esc(etk)}</span></div>`;
-  }).join("");
-  let baslik, guc, deneK;
+    if(s.tur === "dengeli") return {sinif: yuksek ? "guclu" : "", ad: yuksek ? M.etiketler.esit_yuksek : M.etiketler.esit};
+    return gi === 0 ? {sinif:"guclu", ad:M.etiketler.guclu} : gi === son ? {sinif:"dene", ad:M.etiketler.dene} : {sinif:"", ad:M.etiketler.orta};
+  };
+  let baslikAnahtar, guc, deneK;
   if(s.tur === "dengeli"){
-    const mx = Math.max(t.P,t.M,t.E), mn = Math.min(t.P,t.M,t.E);
-    const sev = mx <= 4 ? "dusuk" : mn >= 8 ? "yuksek" : "orta", m = M.dengeli[sev];
-    baslik = m.baslik; guc = m.metin; deneK = m.dene_olcek || null;
+    const sev = dusuk ? "dusuk" : yuksek ? "yuksek" : "orta", m = M.dengeli[sev];
+    baslikAnahtar = yuksek ? "dengeli_yuksek" : "dengeli"; guc = m.metin; deneK = m.dene_olcek || null;
   } else {
-    const ust = s.gruplar[0], adlar = ust.map(k => A[k].ad).join(" ve ");
-    if(Math.max(t.P,t.M,t.E) <= 4){ baslik = M.dusuk_baslik.replace("{ad}", adlar); guc = M.dusuk_guc.replace("{ad}", adlar); }
-    else { baslik = ust.length === 1 ? `Cevaplarına göre en güçlü anın: ${adlar}` : `Cevaplarına göre en güçlü anların: ${adlar}`; guc = ust.map(k => A[k].guc).join(" "); }
-    const alt = s.gruplar[son]; deneK = ["E","M","P"].find(k => alt.includes(k));
+    const ust = s.gruplar[0]; baslikAnahtar = ust.join("");
+    guc = dusuk ? M.dusuk_guc.replace("{ad}", ust.map(adYaz).join(" ve ")) : ust.map(k => A[k].guc).join(" ");
+    deneK = ["E","M","P"].find(k => s.gruplar[son].includes(k));
   }
-  $("a-baslik").textContent = baslik; $("a-guc").textContent = guc;
-  $("a-dene").innerHTML = deneK ? `<b>Şunu dene:</b> ${esc(A[deneK].dene)}` : "";
-  $("a-dene").classList.toggle("gizli", !deneK);
-  const simge = {kalici:"●", arada:"◐", kolay:"○"};
-  $("tuzaklar").innerHTML = M.kaya_sira.map(k => {
-    const d = tuzakDurum(t[k]), m = M.tuzaklar[k];
-    return `<div class="kutu tuzak"><h3><span class="harf" aria-hidden="true">${esc(m.harf)}</span> ${esc(m.ad)}</h3><div class="oz">${esc(m.ozet)}</div><div class="oz kolay-yol">${esc(m.kolay_yol)}</div><span class="rozet r-${d}"><span aria-hidden="true">${simge[d]}</span> ${esc(M.durumlar[d])}</span><p>${esc(m[d])}</p></div>`;
-  }).join("");
-  $("pilot").classList.toggle("gizli", !PILOT);
-  if(PILOT) dokum(t, s);
+  const kaya = Object.fromEntries(KAYA.map(k => [k, tuzakDurum(t[k])]));
+  const kayaGibi = KAYA.filter(k => kaya[k] === "kalici").length;
+  return {t, s, etiket, baslikAnahtar, guc, deneK, kaya, kayaGibi, yuksek};
+}
+function sekme(i){
+  document.querySelectorAll("#sekmeler button").forEach((b,j) => { b.setAttribute("aria-selected", String(i===j)); b.tabIndex = i===j ? 0 : -1; });
+  for(let j=0;j<4;j++) $("p"+j).classList.toggle("gizli", i!==j);
+}
+$("sekmeler").addEventListener("click", e => { const b = e.target.closest("button"); if(b) sekme(+b.id.slice(1)); });
+$("sekmeler").addEventListener("keydown", e => {
+  const i = [...$("sekmeler").children].findIndex(b => b.getAttribute("aria-selected") === "true");
+  if(e.key === "ArrowRight" || e.key === "ArrowLeft"){ e.preventDefault(); const n = (i + (e.key === "ArrowRight" ? 1 : 3)) % 4; sekme(n); $("t"+n).focus(); }
+});
+$("denemelere-git").onclick = () => { sekme(1); $("t1").focus(); $("sekmeler").scrollIntoView({behavior:"smooth"}); };
+
+function sonucGoster(){
+  const o = ozet(), A = M.anlar, ad = D.ad;
+  const bas = R.basliklar[o.baslikAnahtar] || "";
+  $("r-eyebrow").textContent = ORNEK ? R.ornek_eyebrow : R.eyebrow;
+  $("r-h1").textContent = ad ? `${ad}, ${bas}` : buyukTR(bas);
+  $("r-ozet").textContent = o.guc;
+  $("r-cipler").innerHTML = [`${D.sinif}. sınıf`, `BAK sıran: ${harfSira(o.s)}`, o.kayaGibi ? `${o.kayaGibi} anahtar kaya gibi` : "4 KAYA anahtarı", "Kişisel öğrenme rehberi"].map(c => `<span class="cip">${esc(c)}</span>`).join("");
+  avatarYaz($("r-avatar"), D.avatar);
+  $("p0-eyebrow").textContent = ad ? `${ad.toLocaleUpperCase("tr")} İÇİN NOTLAR` : "SANA NOTLAR";
+  $("p0-h2").textContent = "BAK: öğrenmenin üç anı"; $("p0-alt").textContent = M.anlar_giris;
+  $("bak-kartlar").innerHTML = ANLAR.map(k => { const e = o.etiket(k);
+    const metin = e.sinif === "guclu" ? A[k].guc : e.sinif === "dene" ? A[k].gelisme : (o.s.tur === "dengeli" && Math.max(o.t.P,o.t.M,o.t.E) <= 4) ? A[k].gelisme : A[k].orta;
+    return `<div class="an-kart"><div class="ust-satir"><span class="harf" style="background:${RENK[k]}" aria-hidden="true">${A[k].harf}</span><h3>${esc(A[k].ad)}</h3><span class="etk ${e.sinif}">${esc(e.ad)}</span></div><p><b>${esc(buyukTR(A[k].alt))}.</b> ${esc(metin)}</p></div>`; }).join("");
+  $("bak-dene").innerHTML = o.deneK ? `<h3>Bu hafta şunu dene: ${esc(A[o.deneK].ad)}</h3><p>${esc(A[o.deneK].dene)}</p>` : "";
+  $("bak-dene").classList.toggle("gizli", !o.deneK);
+  const sahne = {T3:"0% 0%", T1:"100% 0%", T2:"0% 100%", T4:"100% 100%"};
+  $("kaya-kartlar").innerHTML = KAYA.map(k => { const m = M.tuzaklar[k], d = o.kaya[k], dn = m.deneme;
+    return `<article class="deneme"><span class="sahne" style="background-position:${sahne[k]}" role="img" aria-label="${esc(m.ad)} sahnesi"></span>
+      <div class="ust-satir"><span class="harf" style="background:${RENK[k]}" aria-hidden="true">${m.harf}</span><b style="font-size:18px">${esc(m.ad)}</b><span class="durum-cip d-${d}">${esc(M.durumlar[d])}</span></div>
+      <p class="durum-metin">${esc(m[d])}</p>
+      <h3>${esc(dn.ad)}</h3><span class="yol">${esc(m.ozet)}</span>
+      <p class="bilgi">${esc(dn.sure)} · ${esc(dn.malzeme)}</p>
+      <ol>${dn.adimlar.map(x => `<li>${esc(x)}</li>`).join("")}</ol>
+      <details><summary>İstersen bir adım ileri</summary><p>${esc(dn.ileri)}</p></details>
+      <details><summary>Kolay bir başlangıç</summary><p>${esc(dn.kolay)}</p></details>
+      <p class="bilgi" style="margin-top:10px"><i>${esc(m.kolay_yol)}</i></p></article>`; }).join("");
+  $("harita-grafik").innerHTML = haritaSVG(o.t);
+  $("harita-liste").innerHTML = `<div class="bolum">BAK · ÖĞRENME ANLARI</div>` + ANLAR.map(k => `<div><span class="harf" style="background:${RENK[k]}" aria-hidden="true">${A[k].harf}</span><span><h3>${esc(A[k].ad)}</h3><small>${esc(buyukTR(A[k].alt))} · ${esc(o.etiket(k).ad)}</small></span><b>${o.t[k]}</b></div>`).join("")
+    + `<div class="bolum">KAYA · KALICI ÖĞRENME ANAHTARLARI</div>` + KAYA.map(k => `<div><span class="harf" style="background:${RENK[k]}" aria-hidden="true">${M.tuzaklar[k].harf}</span><span><h3>${esc(M.tuzaklar[k].ad)}</h3><small>${esc(M.tuzaklar[k].ozet)} · ${esc(M.durumlar[o.kaya[k]])}</small></span><b>${o.t[k]}</b></div>`).join("");
+  $("p3-h2").textContent = M.aile.baslik.replace("{ad}", ad || "Çocuğunuz");
+  sekme(0);
+  $("pilot").classList.toggle("gizli", !PILOT || ORNEK);
+  if(PILOT && !ORNEK) dokum(o.t, o.s);
   saklamaNotu();
   ekran("sonuc");
 }
+function haritaSVG(t){
+  const k = ["P","M","E","T3","T1","T2","T4"], et = ["Başlarken","Arada","Kapanışta","Karıştır","Aklından","Yay","Anlat"];
+  const cx = 180, cy = 172, r = 108, n = k.length, nokta = (i, v) => { const a = -Math.PI/2 + i*2*Math.PI/n; return [cx + Math.cos(a)*r*v, cy + Math.sin(a)*r*v]; };
+  const halka = f => k.map((_,i) => nokta(i,f).map(x => x.toFixed(1)).join(",")).join(" ");
+  const veri = k.map((x,i) => nokta(i, Math.max(.04, t[x]/12)).map(x => x.toFixed(1)).join(",")).join(" ");
+  return `<svg viewBox="0 0 360 360" role="img" aria-label="BAK ve KAYA yanıt özeti grafiği">
+    ${[.25,.5,.75,1].map(f => `<polygon points="${halka(f)}" fill="${f===1?"#eef6f3":"none"}" stroke="#cfe2dc"/>`).join("")}
+    ${k.map((_,i) => { const [x,y] = nokta(i,1); return `<line x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}" stroke="#d7e4e1"/>`; }).join("")}
+    <polygon points="${veri}" fill="#087c7633" stroke="#087c76" stroke-width="2.5"/>
+    ${k.map((x,i) => { const [px,py] = nokta(i, Math.max(.04, t[x]/12)); const [lx,ly] = nokta(i,1.24); return `<circle cx="${px.toFixed(1)}" cy="${py.toFixed(1)}" r="5" fill="${RENK_HEX[x]}"/><text x="${lx.toFixed(1)}" y="${(ly+5).toFixed(1)}" text-anchor="middle" font-size="13" font-weight="700" fill="${RENK_HEX[x]}">${et[i]}</text>`; }).join("")}
+    <text x="${cx}" y="352" text-anchor="middle" font-size="13" fill="#51696b">Yanıt özeti · not değil</text></svg>`;
+}
 function saklamaNotu(){
-  let m = "Cevapların yalnız bu cihazın tarayıcısında saklanır ve 14 gün sonra silinir. \"Yeni test başlat\" ile hemen silebilirsin.";
-  if(D.onay) m = "Cevapların, velinin izniyle takma adınla Öğrenme Alışkanlığı araştırmasına gönderildi; bir kopyası 14 gün bu cihazda da kalır.";
-  if(!kayitTamam) m = "Bu tarayıcı kayıt yapmaya izin vermiyor; sayfayı yenilersen sonuç kaybolur.";
+  let m = "Cevapların yalnız bu cihazın tarayıcısında saklanır ve 14 gün sonra silinir. \"Yanıtlarımı sil / yeni çocuk\" ile hemen silebilirsin.";
+  if(ORNEK) m = "Bu kurmaca bir örnektir; kendi yanıtların değişmedi.";
+  else if(D.onay) m = "Cevapların, velinin izniyle takma adınla araştırmaya gönderildi; bir kopyası 14 gün bu cihazda da kalır.";
+  if(!kayitTamam && !ORNEK) m = "Bu tarayıcı kayıt yapmaya izin vermiyor; sayfayı yenilersen sonuç kaybolur.";
   $("saklama").textContent = m;
 }
-$("yeniden").onclick = () => {
-  if(!confirm("Cevaplar bu cihazdan silinecek ve yeni test başlayacak. Emin misin?")) return;
-  sil(); D = BOS(); girisGoster();
-};
-$("yazdir").onclick = () => window.print();
-let acikDurum = {};
-addEventListener("beforeprint", () => { acikDurum = {y: $("yetiskin").open, p: $("pilot").open}; $("yetiskin").open = true; if(PILOT) $("pilot").open = true; });
-addEventListener("afterprint", () => { $("yetiskin").open = acikDurum.y; $("pilot").open = acikDurum.p; });
-
-/* ---- paylaşım kartı ---- */
-function satirlar(ctx, metin, gen){
-  const k = metin.split(" "), s = []; let a = "";
-  for(const w of k){ const b = a ? a + " " + w : w; if(ctx.measureText(b).width > gen && a){ s.push(a); a = w; } else a = b; }
-  if(a) s.push(a); return s;
+function yeniTest(){ if(!confirm("Cevaplar bu cihazdan silinecek ve yeni test başlayacak. Emin misin?")) return; ornekKapat(false); sil(); D = BOS(); girisGoster(); }
+$("yeniden").onclick = yeniTest; $("sil-btn").onclick = yeniTest;
+$("marka").onclick = () => { if(ORNEK){ ornekKapat(true); return; } if(!$("sonuc").classList.contains("gizli") || !$("giris").classList.contains("gizli")) girisGoster(); else girisGoster(); };
+function kaynakGoster(){
+  if(!$("sonuc").classList.contains("gizli")){ $("kaynak").open = true; $("kaynak").scrollIntoView({behavior:"smooth"}); return; }
+  if($("giris").classList.contains("gizli")) return;
+  const d = document.querySelector(".veli-bilgi"); d.open = true; d.scrollIntoView({behavior:"smooth"});
 }
-$("kart-yap").onclick = async () => {
-  const t = olcekPuan(), s = anSinif(t), W = 1080, H = 1350;
-  const c = document.createElement("canvas"); c.width = W; c.height = H; const x = c.getContext("2d");
-  const F = 'system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif';
-  x.fillStyle = "#fbf6ee"; x.fillRect(0,0,W,H);
-  x.fillStyle = "#b4491a"; x.fillRect(0,0,W,18);
-  x.fillStyle = "#1f2a44"; x.font = `800 54px ${F}`; x.fillText("Öğrenme Alışkanlığı Testi", 80, 140); x.fillStyle = "#b4491a"; x.font = `800 30px ${F}`; x.textAlign = "right"; x.fillText("BAK · KAYA", W-80, 140); x.textAlign = "left";
-  x.fillStyle = "#59606c"; let fs = 34; const altYazi = D.ad ? `${D.ad} · bugünkü sonucum` : "Bugünkü sonucum";
-  do { x.font = `500 ${fs}px ${F}`; fs -= 2; } while(x.measureText(altYazi).width > W-160 && fs > 18);
-  x.fillText(altYazi, 80, 195, W-160);
-  const yuksek = Math.min(t.P,t.M,t.E) >= 8;
-  const cumle = s.tur === "dengeli" ? (yuksek ? M.paylasim.dengeli_yuksek : M.paylasim.dengeli) : (M.paylasim[s.gruplar[0].join("")] || "");
-  x.fillStyle = "#1f2a44"; x.font = `800 56px ${F}`;
-  let y = 320; for(const l of satirlar(x, cumle, W-160).slice(0,4)){ x.fillText(l, 80, y); y += 70; }
-  y += 30; const son = s.gruplar.length - 1, gw = (W-160-40)/3;
-  ANLAR.forEach((k, i) => {
-    const gi = s.gruplar.findIndex(g => g.includes(k)), X = 80 + i*(gw+20);
-    const guclu = s.tur !== "dengeli" && gi === 0, dene = s.tur !== "dengeli" && gi === son;
-    x.fillStyle = "#ffffff"; x.strokeStyle = guclu ? "#17695f" : "#e6dccb"; x.lineWidth = 6;
-    x.beginPath(); x.roundRect(X, y, gw, 170, 28); x.fill(); x.stroke();
-    x.fillStyle = "#1f2a44"; x.textAlign = "center"; const anAd = M.anlar[k].harf + " · " + M.anlar[k].ad; let afs = 42; do { x.font = `800 ${afs}px ${F}`; afs -= 2; } while(x.measureText(anAd).width > gw-40 && afs > 24); x.fillText(anAd, X+gw/2, y+72);
-    x.fillStyle = guclu ? "#17695f" : dene ? "#b4491a" : "#59606c"; x.font = `700 30px ${F}`;
-    x.font = `700 28px ${F}`; x.fillText(s.tur === "dengeli" ? (yuksek ? M.etiketler.esit_yuksek : M.etiketler.esit) : guclu ? M.etiketler.guclu : dene ? M.etiketler.dene : M.etiketler.orta, X+gw/2, y+128);
-    x.textAlign = "left";
-  });
-  y += 250; x.fillStyle = "#1f2a44"; x.font = `800 40px ${F}`; x.fillText("KAYA anahtarlarım", 80, y); y += 30;
-  const renk = {kalici:"#17695f", arada:"#3c4aa6", kolay:"#b4491a"};
-  M.kaya_sira.forEach(k => {
-    const d = tuzakDurum(t[k]); y += 62;
-    x.fillStyle = "#b4491a"; x.font = `800 34px ${F}`; x.fillText(M.tuzaklar[k].harf, 80, y);
-    x.fillStyle = "#1f2a44"; x.font = `600 34px ${F}`; x.fillText(M.tuzaklar[k].ad, 125, y);
-    x.fillStyle = renk[d]; x.font = `800 30px ${F}`; x.textAlign = "right"; x.fillText(M.durumlar[d], W-80, y); x.textAlign = "left";
-  });
-  x.fillStyle = "#59606c"; x.font = `500 28px ${F}`; x.fillText("Not ya da tanı değil; bugünkü cevaplarıma göre bir fotoğraf.", 80, H-110);
-  x.fillStyle = "#b4491a"; x.font = `700 30px ${F}`; x.fillText(location.host + location.pathname.replace(/index\.html$/,""), 80, H-60);
-  const blob = await new Promise(r => c.toBlob(r, "image/png"));
-  const dosya = new File([blob], "yorunge-sonucum.png", {type:"image/png"});
+$("kaynak-ac").onclick = kaynakGoster; $("f-kaynak").onclick = kaynakGoster; $("nasil-btn").onclick = kaynakGoster;
+
+function ornekAc(){
+  if(!ORNEK) gercekD = D;
+  ORNEK = true;
+  D = BOS(); D.ad = "Deniz"; D.sinif = "6"; D.avatar = 5; D.bitti = true; D.sira = Q.length;
+  const hedef = {P:2, M:3, E:1, T1:3, T2:2, T3:1, T4:2};
+  for(const q of Q){ const v = hedef[q.olcek]; D.cevap[q.no] = q.kaliciSol ? ["sagTam","sagBiraz","solBiraz","solTam"][v] : ["solTam","solBiraz","sagBiraz","sagTam"][v]; }
+  $("ornek-bant").classList.remove("gizli"); $("ornek-bant-metin").textContent = R.ornek_bant; $("ornek-don").textContent = R.ornek_don;
+  sonucGoster();
+}
+function ornekKapat(git){ if(!ORNEK) return; ORNEK = false; D = gercekD || BOS(); gercekD = null; $("ornek-bant").classList.add("gizli"); if(git) girisGoster(); }
+$("ornek-btn").onclick = ornekAc; $("ornek-don").onclick = () => ornekKapat(true);
+
+function betik(src){ return new Promise((ok, hata) => { if(document.querySelector(`script[src="${src}"]`)) return ok(); const s = document.createElement("script"); s.src = src; s.onload = ok; s.onerror = hata; document.head.appendChild(s); }); }
+function pdfSayfalari(){
+  const o = ozet(), A = M.anlar, ad = ($("pdf-ad").checked && D.ad) ? D.ad : "";
+  const bas = R.basliklar[o.baslikAnahtar] || "", sinif = `${D.sinif}. sınıf · ${+D.sinif <= 8 ? "Ortaokul" : "Lise"}`;
+  const ust = (eyebrow) => `<div class="p-bar"></div><div class="p-bas">YÖRÜNGE / TACEV <span>${esc(sinif)}</span></div><div class="p-eyebrow">${eyebrow}</div>`;
+  const alt = n => `<div class="p-alt"><span>Kişisel öğrenme rehberi · ${esc(M.marka.urun)} (BAK · KAYA)</span><b>${n} / 3</b></div>`;
+  const av = D.avatar === null ? "" : `<span class="avatar" style="position:absolute;right:56px;top:118px;width:130px;border-radius:12px;background-position:${(D.avatar%5)*25}% ${Math.floor(D.avatar/5)*100}%"></span>`;
+  const satir = (renk, harf, ad, deger, i) => `<div style="display:flex;justify-content:space-between;padding:8px 12px;${i%2?"":"background:#edf6f3"}"><b><span style="color:${renk}">${harf}</span> ${esc(ad)}</b><span>${esc(deger)}</span></div>`;
+  const gucluK = ANLAR.find(k => o.etiket(k).sinif === "guclu");
+  const s1 = `<div class="pdf-sayfa">${ust("SANA ÖZEL ÖĞRENME REHBERİ")}${av}
+    <h1 style="max-width:520px">${ad ? `<em>${esc(ad)},</em>` : ""}${esc(buyukTR(bas))}</h1><p style="max-width:520px;color:#51696b">${esc(o.guc)}</p>
+    <h2 style="margin-top:26px">BAK ve KAYA haritan</h2>
+    <div style="display:grid;grid-template-columns:290px 1fr;gap:20px;align-items:center"><div style="width:290px">${haritaSVG(o.t)}</div>
+      <div>${ANLAR.map((k,i) => satir(RENK_HEX[k], A[k].harf, A[k].ad, o.etiket(k).ad, i)).join("")}<div style="height:10px"></div>${KAYA.map((k,i) => satir(RENK_HEX[k], M.tuzaklar[k].harf, M.tuzaklar[k].ad, M.durumlar[o.kaya[k]], i)).join("")}</div></div>
+    <div class="p-iki" style="margin-top:16px"><div class="p-kutu"><h2 style="margin:0 0 6px;color:#087c76;font-size:18px">${gucluK ? `En güçlü anın: ${esc(A[gucluK].ad)}` : "Üç an birbirine yakın"}</h2><p>${esc(gucluK ? A[gucluK].guc : o.guc)}</p></div>
+      ${o.deneK ? `<div class="p-krem"><h2 style="margin:0 0 6px;font-size:18px">Bu hafta şunu dene: ${esc(A[o.deneK].ad)}</h2><p>${esc(A[o.deneK].dene)}</p></div>` : ""}</div>
+    <p style="color:#51696b;margin-top:12px">${esc(R.not)}</p>
+    <img src="varlik/gorsel/hero.jpg" style="width:100%;height:150px;object-fit:cover;object-position:center 40%;margin-top:12px;display:block"><p style="color:#51696b;font-size:12px;margin-top:10px">${esc(M.sinir)}</p>${alt(1)}</div>`;
+  const durumRenk = {kalici:"#087c76", arada:"#3d62a8", kolay:"#a8551b"};
+  const s2 = `<div class="pdf-sayfa">${ust("KAYA · KALICI ÖĞRENMENİN DÖRT ANAHTARI")}<h1>Bu hafta küçük denemeler</h1><p style="color:#51696b">Her anahtar için küçük bir deneme. İlkini sen seç; hepsini yapmak zorunda değilsin.</p>
+    <div class="p-iki" style="margin-top:14px">${KAYA.map(k => { const m = M.tuzaklar[k], dn = m.deneme;
+      return `<div class="p-kutu" style="min-height:380px"><div style="display:flex;justify-content:space-between;align-items:center"><b style="font-size:17px;color:${RENK_HEX[k]}">${m.harf} · ${esc(m.ad)}</b><span style="font-size:12px;font-weight:700;color:#fff;background:${durumRenk[o.kaya[k]]};padding:3px 10px;border-radius:99px">${esc(M.durumlar[o.kaya[k]])}</span></div>
+        <h2 style="margin:10px 0 2px;color:#087c76;font-size:19px">${esc(dn.ad)}</h2><p style="color:#51696b;font-size:13px">${esc(dn.sure)} · ${esc(dn.malzeme)}</p>
+        ${dn.adimlar.map((x,i) => `<p>${i+1}. ${esc(x)}</p>`).join("")}<p style="color:#087c76;font-weight:700;margin-top:8px">Bir adım ileri: ${esc(dn.ileri)}</p><p style="color:#51696b">Kolay başlangıç: ${esc(dn.kolay)}</p><p style="color:#51696b;font-size:12px;margin-top:8px"><i>${esc(m.kolay_yol)}</i></p></div>`; }).join("")}</div>
+    <p style="color:#51696b;margin-top:12px">Kolay gelen yol o an rahat hissettirir; kalıcı yol biraz daha çaba ister ama bilgiyi daha uzun tutar.</p>${alt(2)}</div>`;
+  const s3 = `<div class="pdf-sayfa">${ust("AİLENE NOTLAR")}<h1>${esc(M.aile.baslik.replace("{ad}", ad || "Çocuğunuz"))}</h1>
+    <div style="display:grid;grid-template-columns:240px 1fr;gap:18px;margin:10px 0"><img src="varlik/gorsel/aile.jpg" style="width:240px;height:160px;object-fit:cover;display:block"><p style="color:#123c40;font-size:13px">${esc(M.veli_notu)}</p></div>
+    <div class="p-iki" style="grid-template-columns:repeat(3,1fr)">${M.aile.ipuclari.map(x => `<div class="p-kutu"><b style="color:#087c76;display:block;margin-bottom:4px">${esc(x.b)}</b><p style="font-size:13px">${esc(x.m)}</p></div>`).join("")}</div>
+    <div class="p-dort" style="margin-top:14px">${M.aile.plan.map(x => `<div><b style="color:#087c76;font-size:12px">${esc(x.g)}</b><p style="font-weight:700;margin:2px 0">${esc(x.b)}</p><p style="font-size:13px;color:#51696b">${esc(x.m)}</p></div>`).join("")}</div>
+    <div class="p-krem" style="margin-top:12px"><b>Öğretmene not</b><p style="font-size:13px">${esc(M.ogretmen_notu)}</p></div>
+    <h2 style="color:#087c76">${esc(M.aile.tacev_baslik)}</h2>
+    <div class="p-iki">${M.aile.tacev.map(x => `<div><p style="font-size:13px">${esc(x.m)}</p><div class="p-yesil" style="margin-top:8px">${esc(x.b)}</div></div>`).join("")}</div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:18px;margin-top:10px"><div><p style="color:#51696b;font-size:13px">${esc(M.aile.tacev_not)}</p><p style="color:#087c76;font-weight:700">${esc(M.marka.tacev_url.replace(/^https:\/\//,""))}</p></div><div id="pdf-qr" style="width:84px;height:84px;flex:none;margin-bottom:22px"></div></div>${alt(3)}</div>`;
+  $("pdf").innerHTML = s1 + s2 + s3;
+  if(window.qrcode){ const q = qrcode(0, "M"); q.addData(M.marka.tacev_url); q.make(); $("pdf-qr").innerHTML = q.createSvgTag({cellSize:3, margin:0, scalable:true}); }
+}
+$("pdf-indir").onclick = async () => {
+  const btn = $("pdf-indir"); btn.disabled = true; $("pdf-durum").textContent = "PDF hazırlanıyor…";
   try{
-    if(navigator.canShare && navigator.canShare({files:[dosya]})){ await navigator.share({files:[dosya], title:"Öğrenme Alışkanlığı Testi"}); $("kart-not").textContent = ""; return; }
-  }catch(e){ if(e && e.name === "AbortError") return; }
-  const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = "yorunge-sonucum.png"; a.click();
-  $("kart-not").textContent = "Kart indirildi: yorunge-sonucum.png";
+    await betik("varlik/lib/qrcode.min.js"); await betik("varlik/lib/html2canvas.min.js"); await betik("varlik/lib/jspdf.umd.min.js");
+    pdfSayfalari();
+    await Promise.all([...$("pdf").querySelectorAll("img")].map(i => i.complete ? 0 : new Promise(r => { i.onload = i.onerror = r; })));
+    if(document.fonts && document.fonts.ready) await document.fonts.ready;
+    const pdf = new window.jspdf.jsPDF({unit:"mm", format:"a4", compress:true});
+    const sayfalar = [...$("pdf").querySelectorAll(".pdf-sayfa")];
+    for(let i=0;i<sayfalar.length;i++){
+      const c = await html2canvas(sayfalar[i], {scale:2, backgroundColor:"#ffffff", useCORS:true, logging:false});
+      if(i) pdf.addPage();
+      pdf.addImage(c.toDataURL("image/jpeg", .9), "JPEG", 0, 0, 210, 297);
+    }
+    const dosya = "ogrenme-rehberim" + (($("pdf-ad").checked && D.ad) ? "-" + D.ad.replace(/[^\p{L}\p{N}]+/gu,"-") : "") + ".pdf";
+    pdf.save(dosya); $("pdf-durum").textContent = "PDF indirildi: " + dosya;
+  }catch(e){ $("pdf-durum").textContent = "PDF hazırlanamadı. Sayfayı yenileyip yeniden dene."; }
+  $("pdf").innerHTML = ""; btn.disabled = false;
 };
 
-/* ---- pilot: veli tahmini ---- */
+function satirlar(ctx, metin, gen){ const k = metin.split(" "), s = []; let a = ""; for(const w of k){ const b = a ? a + " " + w : w; if(ctx.measureText(b).width > gen && a){ s.push(a); a = w; } else a = b; } if(a) s.push(a); return s; }
+$("kart-yap").onclick = async () => {
+  const o = ozet(), W = 1080, H = 1350, c = document.createElement("canvas"); c.width = W; c.height = H; const x = c.getContext("2d");
+  if(document.fonts && document.fonts.ready) await document.fonts.ready;
+  const F = '"Geist",system-ui,Arial,sans-serif';
+  x.fillStyle = "#f4f8f7"; x.fillRect(0,0,W,H);
+  x.fillStyle = "#123c40"; x.beginPath(); x.roundRect(48,48,W-96,480,40); x.fill();
+  x.fillStyle = "#a5dec8"; x.font = `700 26px ${F}`; x.fillText("YÖRÜNGE · TACEV · BAK · KAYA", 96, 120);
+  x.fillStyle = "#ffffff"; const bas = R.basliklar[o.baslikAnahtar] || ""; const baslik = D.ad ? `${D.ad}, ${bas}` : buyukTR(bas);
+  x.font = `700 56px ${F}`; let y = 205; for(const l of satirlar(x, baslik, D.avatar === null ? W-192 : W-450).slice(0,4)){ x.fillText(l, 96, y); y += 68; }
+  x.fillStyle = "#d7ebe5"; x.font = `500 30px ${F}`; x.fillText(`BAK sıram: ${harfSira(o.s)}`, 96, Math.max(y + 10, 380));
+  if(D.avatar !== null){ const img = new Image(); img.src = "varlik/gorsel/avatars.jpg"; await new Promise(r => { img.onload = img.onerror = r; });
+    if(img.width){ const sw = img.width/5, sh = img.height/2, sx = (D.avatar%5)*sw, sy = Math.floor(D.avatar/5)*sh;
+      x.save(); x.beginPath(); x.arc(W-220, 288, 130, 0, Math.PI*2); x.clip(); x.drawImage(img, sx, sy, sw, sh, W-350, 158, 260, 260); x.restore();
+      x.strokeStyle = "#d2ebe0"; x.lineWidth = 8; x.beginPath(); x.arc(W-220, 288, 130, 0, Math.PI*2); x.stroke(); } }
+  y = 630; x.fillStyle = "#123c40"; x.font = `700 38px ${F}`; x.fillText("KAYA anahtarlarım", 96, y);
+  const dr = {kalici:"#087c76", arada:"#3d62a8", kolay:"#a8551b"};
+  KAYA.forEach(k => { y += 92; const m = M.tuzaklar[k];
+    x.fillStyle = "#ffffff"; x.beginPath(); x.roundRect(80, y-58, W-160, 78, 20); x.fill();
+    x.fillStyle = RENK_HEX[k]; x.beginPath(); x.roundRect(104, y-44, 50, 50, 12); x.fill();
+    x.fillStyle = "#fff"; x.font = `800 30px ${F}`; x.textAlign = "center"; x.fillText(m.harf, 129, y-8); x.textAlign = "left";
+    x.fillStyle = "#123c40"; x.font = `600 32px ${F}`; x.fillText(m.ad, 180, y-8);
+    x.fillStyle = dr[o.kaya[k]]; x.font = `700 28px ${F}`; x.textAlign = "right"; x.fillText(M.durumlar[o.kaya[k]], W-112, y-8); x.textAlign = "left"; });
+  const hero = new Image(); hero.src = "varlik/gorsel/hero.jpg"; await new Promise(r => { hero.onload = hero.onerror = r; });
+  if(hero.width){ const sh = hero.width * 150/(W-160); x.save(); x.beginPath(); x.roundRect(80, 1040, W-160, 150, 24); x.clip(); x.drawImage(hero, 0, hero.height*0.3, hero.width, sh, 80, 1040, W-160, 150); x.restore(); }
+  x.fillStyle = "#51696b"; x.font = `500 26px ${F}`; x.fillText("Not ya da tanı değil; bugünkü cevaplarıma göre bir fotoğraf.", 96, H-90);
+  x.fillStyle = "#087c76"; x.font = `700 28px ${F}`; x.fillText(location.host + location.pathname.replace(/index\.html$/,""), 96, H-46);
+  const blob = await new Promise(r => c.toBlob(r, "image/png")); const dosya = new File([blob], "ogrenme-aliskanligim.png", {type:"image/png"});
+  try{ if(navigator.canShare && navigator.canShare({files:[dosya]})){ await navigator.share({files:[dosya], title:M.marka.urun}); return; } }catch(e){ if(e && e.name === "AbortError") return; }
+  const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = "ogrenme-aliskanligim.png"; a.click(); $("kart-not").textContent = "Kart indirildi.";
+};
+
 const VB = ["Hep böyle","Çoğu zaman böyle","Çoğu zaman böyle","Hep böyle"];
-const kucukTR = s => s[0].toLocaleLowerCase("tr") + s.slice(1);
 let veliGecici = {};
 function veliGoster(){
   veliGecici = Object.assign({}, D.veli || {});
   $("veli-liste").innerHTML = M.veli.map((v, i) => {
     const solDuz = i % 2 === 0, sol = solDuz ? v.duzenleyen : v.kolay, sag = solDuz ? v.kolay : v.duzenleyen;
-    const yan = (metin, k1, k2) => `<div class="yan"><p>${esc(metin)}</p><div class="secimler"><button class="secim tam" data-k="${k1}" aria-label="${esc(VB[k1] + ": " + metin)}">${VB[k1]}</button><button class="secim" data-k="${k2}" aria-label="${esc(VB[k2] + ": " + metin)}">${VB[k2]}</button></div></div>`;
-    return `<div class="vsatir" role="group" data-o="${v.olcek}" data-sd="${solDuz?1:0}"><div class="iki">${yan("Bazı çocuklar " + kucukTR(sol), 0, 1)}${yan("Bazı çocuklar ise " + kucukTR(sag), 3, 2)}</div></div>`;
+    const yan = (kim, metin, k1, k2) => `<div class="taraf"><span class="kim">${kim}</span><p>${esc(metin)}</p><div class="secimler"><button class="secim" type="button" data-k="${k1}" aria-label="${esc(VB[k1] + ": " + metin)}">${VB[k1]}</button><button class="secim" type="button" data-k="${k2}" aria-label="${esc(VB[k2] + ": " + metin)}">${VB[k2]}</button></div></div>`;
+    return `<div class="taraflar vsatir" role="group" data-o="${v.olcek}" data-sd="${solDuz?1:0}" style="margin:16px 0">${yan("Bazı çocuklar", sol, 0, 1)}<div class="ama" aria-hidden="true">AMA</div>${yan("Bazı çocuklar ise", sag, 3, 2)}</div>`;
   }).join("");
   document.querySelectorAll(".vsatir").forEach(r => {
     const o = r.dataset.o, sd = r.dataset.sd === "1";
-    const isaretle = () => {
-      r.querySelectorAll(".secim").forEach(b => { const k = +b.dataset.k; b.setAttribute("aria-pressed", veliGecici[o] === (sd ? 3 - k : k) ? "true" : "false"); });
-      r.querySelectorAll(".yan").forEach(y => y.classList.toggle("secili", !!y.querySelector('[aria-pressed="true"]')));
-    };
+    const isaretle = () => { r.querySelectorAll(".secim").forEach(b => { const k = +b.dataset.k; b.setAttribute("aria-pressed", veliGecici[o] === (sd ? 3 - k : k) ? "true" : "false"); });
+      r.querySelectorAll(".taraf").forEach(y => y.classList.toggle("secili", !!y.querySelector('[aria-pressed="true"]'))); };
     r.querySelectorAll(".secim").forEach(b => b.onclick = () => { const k = +b.dataset.k; veliGecici[o] = sd ? 3 - k : k; isaretle(); });
     isaretle();
   });
   $("veli-uyari").textContent = ""; ekran("veli");
 }
-$("veli-ac").onclick = veliGoster;
-$("veli-vazgec").onclick = girisGoster;
+$("veli-ac").onclick = veliGoster; $("veli-vazgec").onclick = girisGoster;
 $("veli-kaydet").onclick = () => {
   const eksik = M.veli.filter(v => veliGecici[v.olcek] === undefined).length;
   if(eksik){ $("veli-uyari").textContent = `${eksik} satır boş kaldı.`; return; }
@@ -511,14 +820,14 @@ function veliKarsilastir(t, s){
   const satir = (ad, a, b, ayni) => `<tr><td>${esc(ad)}</td><td>${esc(a)}</td><td>${esc(b)}</td><td class="${ayni?"esit":""}">${ayni?"✓ aynı":"farklı"}</td></tr>`;
   return `<h3>Veli tahmini ile karşılaştırma</h3><div class="tablo-sar"><table class="kars"><thead><tr><th></th><th>Veli tahmini</th><th>Testin sonucu</th><th></th></tr></thead><tbody>
     ${satir("BAK", sinifYazi(vs), sinifYazi(s), vs.anahtar === s.anahtar)}
-    ${M.kaya_sira.map(k => satir(M.tuzaklar[k].harf + " · " + M.tuzaklar[k].ad, M.durumlar[tuzakDurum(v[k])], M.durumlar[tuzakDurum(t[k])], tuzakDurum(v[k]) === tuzakDurum(t[k]))).join("")}</tbody></table></div>
-    <p class="soluk" style="font-size:.85rem">Veli tahmini her alan için tek sorudur; testteki dört soruyla aynı kesinlikte değildir. Farklılık bir hata göstergesi değil, birlikte konuşmak için başlangıçtır.</p>`;
+    ${KAYA.map(k => satir(M.tuzaklar[k].harf + " · " + M.tuzaklar[k].ad, M.durumlar[tuzakDurum(v[k])], M.durumlar[tuzakDurum(t[k])], tuzakDurum(v[k]) === tuzakDurum(t[k]))).join("")}</tbody></table></div>
+    <p class="kucuk-not">Veli tahmini her alan için tek sorudur; testteki dört soruyla aynı kesinlikte değildir. Farklılık bir hata göstergesi değil, birlikte konuşmak için başlangıçtır.</p>`;
 }
 function dokum(t, s){
   const sure = Q.reduce((x,q) => x + (D.sure[q.no] || 0), 0);
   $("d-ozet").innerHTML = `<p><b>Takma ad:</b> ${esc(D.ad||"-")} · <b>Sınıf:</b> ${esc(D.sinif||"-")} · <b>Yanıt süresi toplamı:</b> ${Math.round(sure/6)/10} dk<br>
   <b>BAK (0–12):</b> Başlarken ${t.P} · Arada ${t.M} · Kapanışta ${t.E} → <b>${esc(sinifYazi(s))}</b><br>
-  <b>Tuzaklar (0–12, yüksek = kalıcı yol):</b> Tanıdık gelme ${t.T1} · Son gece ${t.T2} · Tek tip ${t.T3} · Aynen yazma ${t.T4}</p>`;
+  <b>KAYA (0–12):</b> Karıştır ${t.T3} · Aklından söyle ${t.T1} · Yay ${t.T2} · Anlat ${t.T4}</p>`;
   $("d-veli").innerHTML = veliKarsilastir(t, s);
   const ad = {solTam:"Sol · Hep", solBiraz:"Sol · Çoğu zaman", sagBiraz:"Sağ · Çoğu zaman", sagTam:"Sağ · Hep"};
   $("d-tablo").innerHTML = "<thead><tr><th>#</th><th>Madde</th><th>Durum</th><th>Seçim</th><th>Puan</th><th>sn</th></tr></thead><tbody>" +
@@ -527,57 +836,42 @@ function dokum(t, s){
 }
 function metinDokum(){
   const t = olcekPuan(), s = anSinif(t), v = veliPuan();
-  return [`Öğrenme Alışkanlığı Testi ${VERI.surum} — ${D.ad||"-"} (${D.sinif||"-"}. sınıf) — ${D.bitis||""}`,
+  return [`${M.marka.urun} ${VERI.surum} — ${D.ad||"-"} (${D.sinif||"-"}. sınıf) — ${D.bitis||""}`,
     `BAK: Başlarken ${t.P}, Arada ${t.M}, Kapanışta ${t.E} → ${s.anahtar}`,
     `KAYA: Karıştır ${t.T3}, Aklından söyle ${t.T1}, Yay ${t.T2}, Anlat ${t.T4}`,
     v ? `Veli tahmini (×4): B ${v.P}, A ${v.M}, K ${v.E} · Karıştır ${v.T3}, Aklından söyle ${v.T1}, Yay ${v.T2}, Anlat ${v.T4}` : "Veli tahmini: yok",
     ...Q.map(q => `${q.no}\t${q.id}\t${D.cevap[q.no]||"-"}\t${D.cevap[q.no]?puan(q,D.cevap[q.no]):"-"}\t${D.sure[q.no]??"-"} sn`)].join("\n");
 }
-$("kopyala").onclick = async () => {
-  try{ await navigator.clipboard.writeText(metinDokum()); $("kopya-not").textContent = "Kopyalandı."; }
-  catch(e){ $("kopya-not").textContent = "Kopyalanamadı; \"Dosya olarak indir\"i deneyin."; }
-};
-$("indir").onclick = () => {
-  const blob = new Blob([JSON.stringify({surum:VERI.surum, ...D, puan:olcekPuan()}, null, 1)], {type:"application/json"});
-  const a = document.createElement("a"); a.href = URL.createObjectURL(blob);
-  a.download = `yorunge-${(D.ad||"cevaplar").replace(/[^\p{L}\p{N}]+/gu,"-")}.json`; a.click();
-};
+$("kopyala").onclick = async () => { try{ await navigator.clipboard.writeText(metinDokum()); $("kopya-not").textContent = "Kopyalandı."; }catch(e){ $("kopya-not").textContent = "Kopyalanamadı; \"Dosya olarak indir\"i deneyin."; } };
+$("indir").onclick = () => { const blob = new Blob([JSON.stringify({surum:VERI.surum, ...D, puan:olcekPuan()}, null, 1)], {type:"application/json"}); const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = `ogrenme-${(D.ad||"cevaplar").replace(/[^\p{L}\p{N}]+/gu,"-")}.json`; a.click(); };
 
-/* ---- pilot: gönderme (Google Form; yalnız pilot + ayar + veli izni) ---- */
 let gonderiliyor = false;
-function yuk(){
-  const t = olcekPuan(), s = anSinif(t), v = veliPuan(), kod = {solTam:0, solBiraz:1, sagBiraz:2, sagTam:3};
-  return {surum: VERI.surum, bitis: D.bitis, ad: D.ad, sinif: D.sinif, puan: t, anlar: s.anahtar,
-    veli: v, cevap: Q.map(q => D.cevap[q.no] !== undefined ? kod[D.cevap[q.no]] : "-").join(""), sure: Q.map(q => D.sure[q.no] ?? null)};
-}
+function yuk(){ const t = olcekPuan(), s = anSinif(t), v = veliPuan(), kod = {solTam:0, solBiraz:1, sagBiraz:2, sagTam:3};
+  return {surum: VERI.surum, bitis: D.bitis, ad: D.ad, sinif: D.sinif, puan: t, anlar: s.anahtar, veli: v, cevap: Q.map(q => D.cevap[q.no] !== undefined ? kod[D.cevap[q.no]] : "-").join(""), sure: Q.map(q => D.sure[q.no] ?? null)}; }
 async function gonder(){
   if(!gonderAcik() || gonderiliyor || D.gonderildi) return;
   gonderiliyor = true; $("gonder-durum").textContent = "Cevaplar gönderiliyor…";
-  try{
-    await fetch(VERI.gonder.form_url, {method:"POST", mode:"no-cors", body: new URLSearchParams({[VERI.gonder.alan]: JSON.stringify(yuk())})});
-    D.gonderildi = true; kaydet();
-  }catch(err){}
+  try{ await fetch(VERI.gonder.form_url, {method:"POST", mode:"no-cors", body: new URLSearchParams({[VERI.gonder.alan]: JSON.stringify(yuk())})}); D.gonderildi = true; kaydet(); }catch(err){}
   gonderiliyor = false; gonderDurum(); saklamaNotu();
 }
 function gonderDurum(){
-  const el = $("gonder-durum");
-  if(!gonderAcik()){ el.textContent = ""; return; }
-  el.innerHTML = !D.onay ? "Bu test için gönderme izni verilmedi; cevaplar yalnız bu cihazda."
-    : D.gonderildi ? "✓ Cevaplar gönderildi (forma ulaştığı ayrıca doğrulanamaz; tabloda kontrol edin)."
-    : `Cevaplar gönderilemedi. <button class="dugme ikincil" id="yeniden-gonder">Yeniden gönder</button>`;
+  const el = $("gonder-durum"); if(!gonderAcik()){ el.textContent = ""; return; }
+  el.innerHTML = !D.onay ? "Bu test için gönderme izni verilmedi; cevaplar yalnız bu cihazda." : D.gonderildi ? "✓ Cevaplar gönderildi (forma ulaştığı ayrıca doğrulanamaz; tabloda kontrol edin)." : `Cevaplar gönderilemedi. <button class="ikincil" type="button" id="yeniden-gonder">Yeniden gönder</button>`;
   const b = $("yeniden-gonder"); if(b) b.onclick = gonder;
 }
 
-/* ---- başlangıç ---- */
 if(prm.has("sifirla")) sil();
+avatarOnizle();
 if(prm.has("demo")){
   let n = Number(prm.get("demo")) || 7; const r = () => (n = (n*16807) % 2147483647) / 2147483647;
-  D = BOS(); D.ad = "Deneme"; D.sinif = "6"; D.bitti = true; D.sira = Q.length; D.bitis = "demo";
+  D = BOS(); D.ad = "Deneme"; D.sinif = "6"; D.avatar = Math.floor(r()*10); D.bitti = true; D.sira = Q.length; D.bitis = "demo";
   for(const q of Q){ D.cevap[q.no] = BUTON[Math.floor(r()*4)]; D.sure[q.no] = Math.round(30+r()*120)/10; }
   if(PILOT) D.veli = {P:3,M:1,E:0,T1:1,T2:2,T3:0,T4:3};
   sonucGoster();
 } else if(prm.has("soru")){
-  D = BOS(); D.basladi = "onizleme"; D.sira = Math.min(Q.length, Math.max(1, Number(prm.get("soru"))||1)) - 1; ekran("soru", "durum"); soruGoster();
+  D = BOS(); D.basladi = "onizleme"; D.avatar = 8; D.sira = Math.min(Q.length, Math.max(1, Number(prm.get("soru"))||1)) - 1; ekran("soru", "durum"); soruGoster();
+} else if(prm.has("ornek")){
+  ornekAc();
 } else if(prm.has("veliekran") && PILOT){
   veliGoster();
 } else {
