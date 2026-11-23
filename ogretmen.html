@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="referrer" content="no-referrer">
+<title>Öğretmen sayfası · TACEV BAK–KAYA</title>
+<style>
+@font-face{font-family:Geist;src:url('varlik/font/geist-latin-ext.woff2') format('woff2');font-style:normal;font-weight:100 900;font-display:swap;unicode-range:U+0100-02FF,U+1E00-1EFF,U+2000-206F,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:Geist;src:url('varlik/font/geist-latin.woff2') format('woff2');font-style:normal;font-weight:100 900;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+:root{color-scheme:light;--ink:#123c40;--teal:#087c76;--line:#d7e4e1;--muted:#51696b;--paper:#f4f8f7;--blue:#3d62a8;--rust:#a8551b}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 Geist,system-ui,sans-serif}main{max-width:1080px;margin:auto;padding:52px 28px 32px}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(2.2rem,6vw,3.8rem);line-height:1.1;letter-spacing:-.045em;margin-bottom:16px}h2{font-size:1.65rem;line-height:1.25;letter-spacing:-.025em;margin-bottom:12px}h3{font-size:1.1rem;line-height:1.4}a{color:var(--teal);text-underline-offset:4px}button,a{touch-action:manipulation}.brand{font-size:.875rem;font-weight:650;letter-spacing:.08em;margin-bottom:24px}.intro{color:var(--muted);font-size:1.1rem;margin-bottom:32px}.panel{background:white;border:1px solid var(--line);border-radius:26px;padding:32px;margin:24px 0}.eyebrow{font-size:.875rem;font-weight:650;color:var(--teal);margin-bottom:12px}.muted,.hint{color:var(--muted)}.hint{font-size:.9rem;margin:8px 0 16px}label{display:block;font-weight:600;margin-bottom:10px}textarea{display:block;width:100%;min-height:210px;border:1px solid #8aa7a5;border-radius:16px;background:#fbfdfc;color:var(--ink);padding:16px;font:1rem/1.7 Geist,system-ui,sans-serif;resize:vertical}textarea::placeholder{color:var(--muted)}:focus-visible{outline:3px solid var(--blue);outline-offset:4px}button,.test-link{min-height:46px;padding:11px 20px;border-radius:12px;font:600 1rem/1.4 Geist,system-ui,sans-serif;cursor:pointer}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px}button{border:1px solid var(--teal);background:var(--teal);color:white}button:hover{filter:brightness(.93)}button.secondary{background:white;color:var(--ink);border-color:var(--line)}.status{margin:16px 0 0;font-weight:550}.count{font-size:1.3rem;font-weight:650;margin-bottom:8px}.issues{border-left:3px solid var(--rust);padding-left:16px;margin:20px 0;overflow-wrap:anywhere}.issues ul{max-height:220px;overflow:auto;padding-left:24px}.duplicate{color:#804014}.legend{display:flex;flex-wrap:wrap;gap:8px 22px;margin:24px 0;font-size:.9rem}.legend span:before{content:'';display:inline-block;width:12px;height:12px;margin-right:7px;border-radius:3px;background:var(--color)}.group-title{border-bottom:1px solid var(--line);padding-bottom:12px;margin-top:28px}.habit{display:grid;grid-template-columns:42px minmax(0,1fr);gap:12px;margin:22px 0}.badge{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;color:white;font-size:1.1rem;font-weight:700;background:var(--habit)}.habit h4{margin:0 0 10px;font-size:1rem;font-weight:600}.bar{display:flex;height:34px;overflow:hidden;border-radius:8px;background:var(--paper)}.segment{display:flex;align-items:center;justify-content:center;color:white;font-size:.8rem;white-space:nowrap;min-width:0}.bar-values{font-size:.875rem;color:var(--muted);margin:8px 0 0;overflow-wrap:anywhere}.support{background:#edf6f3;border:1px solid var(--line);border-radius:18px;padding:24px;margin:30px 0 22px}.support h3{margin-bottom:12px}.support p:last-child{margin-bottom:0}.privacy{color:var(--muted);font-size:.925rem;margin:24px 0 0}.sheet-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap}.sheet-head span{font-size:.875rem;color:var(--muted)}.cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px}.card{border:1px solid var(--line);border-radius:20px;padding:24px;break-inside:avoid}.card.wide{grid-column:1/-1}.card p:last-child{margin-bottom:0}.plan{margin:16px 0;padding-left:24px}.plan li{padding:5px 0}.ideas{list-style:none;padding:0;margin:0;display:grid;gap:20px}.ideas li{padding-left:16px;border-left:3px solid var(--habit)}.ideas strong{display:block;margin-bottom:4px}.ethics{padding-left:20px}.ethics li{margin-bottom:8px}.limit{background:var(--paper)}footer{text-align:center;color:var(--muted);font-size:.875rem;padding:16px 0 28px}[hidden]{display:none!important}
+@media(max-width:600px){main{padding:28px 16px 16px}.panel{padding:22px 18px;border-radius:22px}.cards{grid-template-columns:1fr}.card{padding:20px}.habit{grid-template-columns:32px minmax(0,1fr);gap:10px}.badge{width:32px;height:34px;border-radius:10px}.support{padding:18px}.intro{font-size:1rem}.segment{font-size:.7rem}}
+@media print{@page{margin:15mm}body{background:white;font-size:10pt;color:#123c40}main{padding:0;max-width:none}header,.entry,.no-print,footer{display:none!important}.panel{border:0;border-radius:0;padding:0;margin:0 0 24px;box-shadow:none}h2{font-size:19pt}h3{font-size:12pt}.cards{display:block}.card{padding:14px;margin-bottom:12px;border-radius:10px}.habit{break-inside:avoid;margin:14px 0}.group-title{break-after:avoid}.support{break-inside:avoid}.bar,.badge,.legend span:before{-webkit-print-color-adjust:exact;print-color-adjust:exact}.issues ul{max-height:none;overflow:visible}.sheet{break-before:page}.privacy{font-size:9pt}a{color:inherit;text-decoration:none}.test-link{padding:0;min-height:0}}
+</style>
+</head>
+<body>
+<main>
+<header><p class="brand">Yörünge / TACEV</p><h1>Öğretmen sayfası</h1><p class="intro">Öğrenme Alışkanlığı Testi · BAK–KAYA</p></header>
+<section class="panel" aria-labelledby="summary-title">
+<h2 id="summary-title">Sınıf özeti</h2>
+<div class="entry">
+<p class="muted">Öğrencilerin sonuç kodlarını bir araya getirin; sınıfça deneyeceğiniz bir alışkanlık seçin. İsim yazmanız gerekmez.</p>
+<form id="code-form">
+<label for="codes">Sonuç kodları</label>
+<textarea id="codes" name="codes" spellcheck="false" autocapitalize="characters" autocomplete="off" aria-describedby="code-hint" placeholder="Her satıra bir kod: BK-XXXX-XXXX"></textarea>
+<p id="code-hint" class="hint">Her satıra bir kod yapıştırın. Boş satırlar atlanır; küçük harf, boşluk ve tire farklılıkları kabul edilir. Kodlar kaydedilmez; sayfa kapanınca silinir.</p>
+<div class="actions"><button type="submit">Özeti göster</button><button type="button" class="secondary" id="clear">Temizle</button></div>
+</form>
+<p id="status" class="status" role="status" aria-live="polite"></p>
+</div>
+<div id="results" hidden>
+<p id="valid-count" class="count"></p>
+<div id="issues" class="issues" hidden><h3>Geçersiz kodlar</h3><ul id="invalid-list"></ul></div>
+<p id="duplicates" class="duplicate" hidden></p>
+<div id="distribution" hidden>
+<div class="legend" aria-label="Düzeyler ve puan aralıkları"><span style="--color:#087c76">Sık · 9–12</span><span style="--color:#3d62a8">Bazen · 4–8</span><span style="--color:#a8551b">Henüz az · 0–3</span></div>
+<div id="charts"></div>
+<aside class="support" aria-labelledby="support-title"><h3 id="support-title">Sınıfta en çok destek bekleyen alışkanlık</h3><div id="support-content"></div></aside>
+</div>
+</div>
+<p class="privacy">Bu özet öğrencileri sıralamak ya da karşılaştırmak için değil, sınıfça hangi alışkanlığı birlikte çalışacağınızı seçmek içindir. Kodlar yalnız bu tarayıcıda işlenir; hiçbir yere gönderilmez.</p>
+<div class="actions no-print"><button type="button" class="secondary" id="print">Özeti ve föyü yazdır</button></div>
+<noscript><p>Kodlardan sınıf özeti oluşturmak için tarayıcınızda JavaScript açık olmalıdır. Öğretmen föyünü aşağıda okuyup yazdırabilirsiniz.</p></noscript>
+</section>
+<section class="panel sheet" aria-labelledby="sheet-title">
+<div class="sheet-head"><h2 id="sheet-title">Öğretmen föyü</h2><span>10–14 yaş · Birlikte küçük bir deneme</span></div>
+<div class="cards">
+<article class="card wide"><p class="eyebrow">40 dakikada sınıfta uygulama</p><h3>Kendi alışkanlığını fark et, bir adım seç</h3>
+<ol class="plan"><li><strong>5 dk · Tanıtım:</strong> “Doğru/yanlış cevap yok. Kendinizi düşünerek yanıtlayın.”</li><li><strong>10 dk · Test:</strong> Öğrenciler testi kendi başlarına yanıtlar.</li><li><strong>10 dk · Kişisel rehber:</strong> Her öğrenci kendi rehberini okur.</li><li><strong>10 dk · Bu haftanın denemesi:</strong> Her öğrenci uygulayabileceği bir alışkanlığı seçer.</li><li><strong>5 dk · Kodları toplama:</strong> İsim istemeden yalnız sonuç kodlarını toplayın.</li></ol>
+<p><a class="test-link" href="./">Testi aç · Ana sayfa</a></p><p class="muted">Öğrenci sonuç kodunu rehberin son sayfasında ya da sonuç ekranında bulur. Kodları yukarıya her satıra bir tane gelecek şekilde yapıştırabilirsiniz.</p></article>
+<article class="card wide"><p class="eyebrow">Derste 5 dakikalık uygulamalar</p><h3>BAK · Bir ödevi yaparken</h3><ul class="ideas">
+<li style="--habit:#087c76"><strong>B · Başlarken: plan yapmak</strong>Ödevi vermeden önce sınıfa 'İlk neyi yapacaksınız?' diye sorun, iki öğrenciye planını söyletin.</li>
+<li style="--habit:#3d62a8"><strong>A · Arada: durup kontrol etmek</strong>Bir alıştırmanın ortasında 'kalemleri bırakın' deyin ve 'Buraya kadar ne anladık?' diye sorun.</li>
+<li style="--habit:#7a4f9e"><strong>K · Kapanışta: ders çıkarmak</strong>Yazılı kâğıtlarını dağıtınca notu değil, bir yanlışın nedenini yazmalarını isteyin.</li></ul>
+<h3 class="group-title">KAYA · Öğrendiğini akılda tutmak</h3><ul class="ideas">
+<li style="--habit:#a8551b"><strong>K · Karıştır: soruları karışık çözmek</strong>Alıştırma kâğıdına farklı konulardan soruları karışık sırayla koyun.</li>
+<li style="--habit:#3d62a8"><strong>A · Aklından söyle: kitabı kapatıp hatırlamak</strong>Dersin son beş dakikasında defterleri kapattırıp öğrenilenleri hatırlatın.</li>
+<li style="--habit:#4f7228"><strong>Y · Yay: çalışmayı günlere yaymak</strong>Bir konuyu bir hafta sonra ve bir ay sonra iki kısa soruyla yeniden sorun.</li>
+<li style="--habit:#9b3f6f"><strong>A · Anlat: kendi cümleleriyle anlatmak</strong>Öğrencilerden konuyu sıra arkadaşına iki cümleyle anlatmalarını isteyin.</li></ul></article>
+<article class="card"><h3>Sonuçlara özenle yaklaşın</h3><ul class="ethics"><li>Sonuçlar not ya da tanı değildir.</li><li>Öğrencileri gruplamak, bireysel sonuçlarını sınıfta açıklamak veya birbirleriyle karşılaştırmak için kullanılmaz.</li><li>Veli onayı test girişinde alınmıştır.</li><li>4–6 hafta sonra test tekrarlanıp değişim konuşulabilir.</li></ul></article>
+<article class="card limit"><h3>Testin sınırı</h3><p>Sorular öğrenme psikolojisi araştırmalarına dayanır; geniş bir öğrenci grubuyla geçerlik çalışması henüz yapılmamıştır.</p></article>
+</div>
+</section>
+<footer>TACEV · tacevteknoloji.com/iletisim</footer>
+</main>
+<script>
+'use strict';
+const ALPHABET = '0123456789ABC';
+const HABITS = [
+  {id:'P',letter:'B',color:'#087c76',label:'Başlarken: plan yapmak',tip:"Ödevi vermeden önce sınıfa 'İlk neyi yapacaksınız?' diye sorun, iki öğrenciye planını söyletin."},
+  {id:'M',letter:'A',color:'#3d62a8',label:'Arada: durup kontrol etmek',tip:"Bir alıştırmanın ortasında 'kalemleri bırakın' deyin ve 'Buraya kadar ne anladık?' diye sorun."},
+  {id:'E',letter:'K',color:'#7a4f9e',label:'Kapanışta: ders çıkarmak',tip:'Yazılı kâğıtlarını dağıtınca notu değil, bir yanlışın nedenini yazmalarını isteyin.'},
+  {id:'T3',letter:'K',color:'#a8551b',label:'Karıştır: soruları karışık çözmek',tip:'Alıştırma kâğıdına farklı konulardan soruları karışık sırayla koyun.'},
+  {id:'T1',letter:'A',color:'#3d62a8',label:'Aklından söyle: kitabı kapatıp hatırlamak',tip:'Dersin son beş dakikasında defterleri kapattırıp öğrenilenleri hatırlatın.'},
+  {id:'T2',letter:'Y',color:'#4f7228',label:'Yay: çalışmayı günlere yaymak',tip:'Bir konuyu bir hafta sonra ve bir ay sonra iki kısa soruyla yeniden sorun.'},
+  {id:'T4',letter:'A',color:'#9b3f6f',label:'Anlat: kendi cümleleriyle anlatmak',tip:'Öğrencilerden konuyu sıra arkadaşına iki cümleyle anlatmalarını isteyin.'}
+];
+const LEVELS = [{label:'Sık',color:'#087c76'},{label:'Bazen',color:'#3d62a8'},{label:'Henüz az',color:'#a8551b'}];
+function decodeCode(raw) {
+  const normalized = raw.replace(/[\s\-‐‑‒–—−]/g,'').toUpperCase();
+  if (!/^BK[0-9ABC]{8}$/.test(normalized)) return {error:'Biçim hatası; BK ve 8 puan karakteri (0–9, A, B, C) bekleniyor.'};
+  const digits = [...normalized.slice(2)].map(c => ALPHABET.indexOf(c));
+  const checksum = digits.slice(0,7).reduce((sum,d,i) => sum+(i+1)*d,0)%13;
+  if (digits[7] !== checksum) return {error:'Sağlama tutmuyor; kodu yeniden kontrol edin.'};
+  return {code:`BK-${normalized.slice(2,6)}-${normalized.slice(6)}`,scores:digits.slice(0,7)};
+}
+function summarizeCodes(input) {
+  const valid=[], invalid=[], seen=new Map();
+  input.split(/\r\n|\n|\r/).forEach((line,index) => {
+    if (!line.trim()) return;
+    const result=decodeCode(line);
+    if (result.error) invalid.push({line:index+1,error:result.error});
+    else {valid.push(result);seen.set(result.code,(seen.get(result.code)||0)+1);}
+  });
+  const counts=HABITS.map((_,i) => valid.reduce((acc,item) => {const score=item.scores[i];acc[score>=9?0:score>=4?1:2]++;return acc;},[0,0,0]));
+  const duplicateEntries=[...seen.values()].reduce((sum,n)=>sum+Math.max(0,n-1),0);
+  return {valid,invalid,counts,duplicateEntries};
+}
+const get=id=>document.getElementById(id);
+const percent=(n,total)=>new Intl.NumberFormat('tr-TR',{maximumFractionDigits:1}).format(n*100/total);
+function element(tag,text,className) {const node=document.createElement(tag);if(text!==undefined)node.textContent=text;if(className)node.className=className;return node;}
+function renderSummary(summary) {
+  const total=summary.valid.length;
+  get('results').hidden=false;
+  get('valid-count').textContent=`${total} geçerli kod · ${total} öğrenci`;
+  get('invalid-list').replaceChildren();
+  summary.invalid.forEach(item=>get('invalid-list').append(element('li',`Satır ${item.line}: ${item.error}`)));
+  get('issues').hidden=!summary.invalid.length;
+  get('duplicates').hidden=!summary.duplicateEntries;
+  get('duplicates').textContent=`Uyarı: ${summary.duplicateEntries} yinelenen kod girişi var. Aynı cevaplar mümkün olduğundan her giriş ayrı öğrenci sayıldı.`;
+  get('distribution').hidden=!total;
+  get('charts').replaceChildren();get('support-content').replaceChildren();
+  if (!total) return;
+  HABITS.forEach((habit,i)=>{
+    if(i===0||i===3)get('charts').append(element('h3',i===0?'BAK · Bir ödevi yaparken':'KAYA · Öğrendiğini akılda tutmak','group-title'));
+    const row=element('div',undefined,'habit'), badge=element('span',habit.letter,'badge'), content=element('div');
+    badge.style.setProperty('--habit',habit.color);badge.setAttribute('aria-hidden','true');
+    content.append(element('h4',habit.label));
+    const bar=element('div',undefined,'bar');bar.setAttribute('aria-hidden','true');
+    const values=summary.counts[i];
+    values.forEach((n,j)=>{
+      if(!n)return;
+      const segment=element('span',n/total>=.17?`${n} · %${percent(n,total)}`:'','segment');
+      segment.style.width=`${n*100/total}%`;segment.style.background=LEVELS[j].color;bar.append(segment);
+    });
+    content.append(bar,element('p',values.map((n,j)=>`${LEVELS[j].label} ${n} (%${percent(n,total)})`).join(' · '),'bar-values'));
+    row.append(badge,content);get('charts').append(row);
+  });
+  const maxLow=Math.max(...summary.counts.map(count=>count[2]));
+  if(maxLow===0){get('support-content').append(element('p','Hiçbir alışkanlıkta “Henüz az” yanıtı yok. Sınıfça denemek istediğiniz bir alışkanlığı aşağıdaki föyden seçebilirsiniz.'));return;}
+  const priorities=HABITS.filter((_,i)=>summary.counts[i][2]===maxLow);
+  if(priorities.length>1)get('support-content').append(element('p','“Henüz az” oranı eşit olan alışkanlıklar:'));
+  priorities.forEach(habit=>{
+    const p=element('p');p.append(element('strong',`${habit.label} · %${percent(maxLow,total)} (${maxLow}/${total})`),element('br'),document.createTextNode(habit.tip));get('support-content').append(p);
+  });
+}
+get('code-form').addEventListener('submit',event=>{
+  event.preventDefault();const summary=summarizeCodes(get('codes').value);
+  renderSummary(summary);
+  get('status').textContent=summary.valid.length||summary.invalid.length?`Özet hazır: ${summary.valid.length} geçerli, ${summary.invalid.length} geçersiz kod.`:'Henüz kod girilmedi. Her satıra bir sonuç kodu yapıştırın.';
+});
+get('codes').addEventListener('input',()=>{
+  if(!get('results').hidden){get('results').hidden=true;get('status').textContent='Kodlar değişti. Güncel özet için “Özeti göster” düğmesine basın.';}
+});
+get('clear').addEventListener('click',()=>{
+  get('codes').value='';get('results').hidden=true;get('charts').replaceChildren();get('support-content').replaceChildren();get('invalid-list').replaceChildren();get('valid-count').textContent='';get('duplicates').textContent='';get('status').textContent='Kodlar ve sınıf özeti temizlendi.';get('codes').focus();
+});
+get('print').addEventListener('click',()=>window.print());
+</script>
+</body>
+</html>
