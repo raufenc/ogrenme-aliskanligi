@@ -35,7 +35,7 @@
 <div id="issues" class="issues" hidden><h3>Geçersiz kodlar</h3><ul id="invalid-list"></ul></div>
 <p id="duplicates" class="duplicate" hidden></p>
 <div id="distribution" hidden>
-<div class="legend" aria-label="Düzeyler ve puan aralıkları"><span style="--color:#087c76">Sık · 9–12</span><span style="--color:#3d62a8">Bazen · 4–8</span><span style="--color:#a8551b">Henüz az · 0–3</span></div>
+<div class="legend" aria-label="Düzeyler"><span style="--color:#087c76">Sık</span><span style="--color:#3d62a8">Bazen</span><span style="--color:#a8551b">Henüz az</span></div>
 <div id="charts"></div>
 <aside class="support" aria-labelledby="support-title"><h3 id="support-title">Sınıfta en çok destek bekleyen alışkanlık</h3><div id="support-content"></div></aside>
 </div>
@@ -60,7 +60,7 @@
 <li style="--habit:#4f7228"><strong>Y · Yay: çalışmayı günlere yaymak</strong>Bir konuyu bir hafta sonra ve bir ay sonra iki kısa soruyla yeniden sorun.</li>
 <li style="--habit:#9b3f6f"><strong>A · Anlat: kendi cümleleriyle anlatmak</strong>Öğrencilerden konuyu sıra arkadaşına iki cümleyle anlatmalarını isteyin.</li></ul></article>
 <article class="card"><h3>Sonuçlara özenle yaklaşın</h3><ul class="ethics"><li>Sonuçlar not ya da tanı değildir.</li><li>Öğrencileri gruplamak, bireysel sonuçlarını sınıfta açıklamak veya birbirleriyle karşılaştırmak için kullanılmaz.</li><li>Öğrenci girişte, velisiyle kısa bilgiyi okuduğunu işaretler. Okulunuzun veli bilgilendirme ve izin sürecini ayrıca yürütün.</li><li>4–6 hafta sonra test tekrarlanıp değişim konuşulabilir.</li></ul></article>
-<article class="card limit"><h3>Testin sınırı</h3><p>Sorular öğrenme psikolojisi araştırmalarına dayanır; geniş bir öğrenci grubuyla testin ne kadar doğru ölçtüğü henüz büyük bir öğrenci grubunda sınanmadı.</p></article>
+<article class="card limit"><h3>Testin sınırı</h3><p>Sorular öğrenme araştırmalarına dayanır; test henüz geniş bir öğrenci grubunda sınanmadı.</p></article>
 </div>
 </section>
 <footer>TACEV · tacevteknoloji.com/iletisim</footer>
@@ -99,12 +99,12 @@ function summarizeCodes(input) {
   return {valid,invalid,counts,duplicateEntries};
 }
 const get=id=>document.getElementById(id);
-const percent=(n,total)=>new Intl.NumberFormat('tr-TR',{maximumFractionDigits:1}).format(n*100/total);
+const percent=(n,total)=>new Intl.NumberFormat('tr-TR',{maximumFractionDigits:0}).format(n*100/total);
 function element(tag,text,className) {const node=document.createElement(tag);if(text!==undefined)node.textContent=text;if(className)node.className=className;return node;}
 function renderSummary(summary) {
   const total=summary.valid.length;
   get('results').hidden=false;
-  get('valid-count').textContent=`${total} geçerli kod · ${total} öğrenci`;
+  get('valid-count').textContent=`${total} geçerli sonuç`;
   get('invalid-list').replaceChildren();
   summary.invalid.forEach(item=>get('invalid-list').append(element('li',`Satır ${item.line}: ${item.error}`)));
   get('issues').hidden=!summary.invalid.length;
@@ -122,18 +122,27 @@ function renderSummary(summary) {
     const values=summary.counts[i];
     values.forEach((n,j)=>{
       if(!n)return;
-      const segment=element('span',n/total>=.17?`${n} · %${percent(n,total)}`:'','segment');
+      const segment=element('span',total<20?String(n):`${n} · %${percent(n,total)}`,'segment');
       segment.style.width=`${n*100/total}%`;segment.style.background=LEVELS[j].color;bar.append(segment);
     });
-    content.append(bar,element('p',values.map((n,j)=>`${LEVELS[j].label} ${n} (%${percent(n,total)})`).join(' · '),'bar-values'));
+    content.append(bar,element('p',values.map((n,j)=>total<20?`${LEVELS[j].label}: ${total} öğrenciden ${n} tanesi`:`${LEVELS[j].label} ${n} (%${percent(n,total)})`).join(' · '),'bar-values'));
     row.append(badge,content);get('charts').append(row);
   });
-  const maxLow=Math.max(...summary.counts.map(count=>count[2]));
-  if(maxLow===0){get('support-content').append(element('p','Hiçbir alışkanlıkta “Henüz az” yanıtı yok. Sınıfça denemek istediğiniz bir alışkanlığı aşağıdaki föyden seçebilirsiniz.'));return;}
-  const priorities=HABITS.filter((_,i)=>summary.counts[i][2]===maxLow);
-  if(priorities.length>1)get('support-content').append(element('p','“Henüz az” oranı eşit olan alışkanlıklar:'));
-  priorities.forEach(habit=>{
-    const p=element('p');p.append(element('strong',`${habit.label} · %${percent(maxLow,total)} (${maxLow}/${total})`),element('br'),document.createTextNode(habit.tip));get('support-content').append(p);
+  get('support-title').textContent=total<20?'Sınıfça denenebilecek alışkanlıklar':'Sınıfta en çok destek bekleyen alışkanlık';
+  if(total<20){
+    get('support-content').append(element('p','Bu sayıda sonuçtan kesin bir öncelik çıkarmayın; aşağıdaki alışkanlıklardan birini sınıfça deneyin.'));
+    [0,3].forEach(i=>{const p=element('p');p.append(element('strong',HABITS[i].label),element('br'),document.createTextNode(HABITS[i].tip));get('support-content').append(p);});
+    return;
+  }
+  // BAK ve KAYA öncelikleri kendi içlerinde belirlenir; birbirleriyle kıyaslanmaz.
+  [[0,3,'BAK · Bir ödevi yaparken'],[3,7,'KAYA · Öğrendiğini akılda tutmak']].forEach(([ilk,son,baslik])=>{
+    get('support-content').append(element('h4',baslik));
+    const counts=summary.counts.slice(ilk,son), maxLow=Math.max(...counts.map(count=>count[2]));
+    if(maxLow===0){get('support-content').append(element('p','Bu bölümde “Henüz az” yanıtı yok. Föyden bir alışkanlık seçebilirsiniz.'));return;}
+    const priorities=HABITS.slice(ilk,son).filter((_,i)=>counts[i][2]===maxLow);
+    priorities.forEach(habit=>{
+      const p=element('p');p.append(element('strong',`${habit.label} · %${percent(maxLow,total)} (${maxLow}/${total})`),element('br'),document.createTextNode(habit.tip));get('support-content').append(p);
+    });
   });
 }
 get('code-form').addEventListener('submit',event=>{
