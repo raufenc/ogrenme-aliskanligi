@@ -1142,9 +1142,9 @@ function sayfalariKur(ad, kutu = $("pdf")){
   kutu.querySelectorAll(".p-top").forEach(x => x.textContent = n);
   return kutu.innerHTML;
 }
-// Resim takımı: girişte seçilen cinsiyet (k/o); seçilmediyse avatardan, o da yoksa kız.
-const resimTakim = () => D.cins === "o" || D.cins === "k" ? D.cins : Number.isInteger(D.avatar) && D.avatar >= 5 ? "o" : "k";
-const resimYol = k => `varlik/gorsel/parca/${resimTakim()}-${[...ANLAR, ...KAYA].indexOf(k)}.jpg?v=9`;
+// Resim takımı: resimlerdeki çocuk seçilen avatarın kendisi (a0–a9). Avatarsızsa cinsiyete göre gözlüklü oğlan (a9) ya da gözlüklü kız (a3).
+const resimTakim = () => Number.isInteger(D.avatar) && D.avatar >= 0 && D.avatar < 10 ? "a" + D.avatar : D.cins === "o" ? "a9" : "a3";
+const resimYol = k => `varlik/gorsel/parca/${resimTakim()}-${[...ANLAR, ...KAYA].indexOf(k)}.jpg?v=10`;
 // Telefonda sayfalar yeniden dizilmez; A4 sayfa ekran genişliğine küçülür (PDF ile birebir).
 function sayfaOlcek(){ const k = $("sayfalar"), z = Math.min(1, (k.clientWidth || 794) / 794); k.querySelectorAll(".pdf-sayfa").forEach(p => p.style.zoom = z < 1 ? z : ""); }
 addEventListener("resize", () => { if($("sayfalar").firstElementChild) sayfaOlcek(); });
